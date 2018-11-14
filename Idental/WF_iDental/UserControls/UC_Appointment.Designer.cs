@@ -35,6 +35,7 @@
             this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.palControl = new System.Windows.Forms.Panel();
+            this.cbbDoctor = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.labOption = new System.Windows.Forms.Label();
@@ -50,7 +51,7 @@
             this.txtDoctorID = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.cbbDoctor = new System.Windows.Forms.ComboBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.palTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLichHen)).BeginInit();
             this.palControl.SuspendLayout();
@@ -59,6 +60,7 @@
             // 
             // palTop
             // 
+            this.palTop.Controls.Add(this.panel3);
             this.palTop.Controls.Add(this.dgvLichHen);
             this.palTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.palTop.Location = new System.Drawing.Point(0, 0);
@@ -123,6 +125,16 @@
             this.palControl.Name = "palControl";
             this.palControl.Size = new System.Drawing.Size(1000, 160);
             this.palControl.TabIndex = 1;
+            // 
+            // cbbDoctor
+            // 
+            this.cbbDoctor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbbDoctor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.cbbDoctor.FormattingEnabled = true;
+            this.cbbDoctor.Location = new System.Drawing.Point(399, 43);
+            this.cbbDoctor.Name = "cbbDoctor";
+            this.cbbDoctor.Size = new System.Drawing.Size(121, 21);
+            this.cbbDoctor.TabIndex = 7;
             // 
             // panel1
             // 
@@ -283,15 +295,14 @@
             this.btnSearch.Text = "  Tìm ";
             this.btnSearch.UseVisualStyleBackColor = true;
             // 
-            // cbbDoctor
+            // panel3
             // 
-            this.cbbDoctor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbbDoctor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.cbbDoctor.FormattingEnabled = true;
-            this.cbbDoctor.Location = new System.Drawing.Point(399, 43);
-            this.cbbDoctor.Name = "cbbDoctor";
-            this.cbbDoctor.Size = new System.Drawing.Size(121, 21);
-            this.cbbDoctor.TabIndex = 7;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 404);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1000, 5);
+            this.panel3.TabIndex = 1;
             // 
             // UC_Appointment
             // 
@@ -338,5 +349,6 @@
         private System.Windows.Forms.TextBox txtAppointment;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cbbDoctor;
+        private System.Windows.Forms.Panel panel3;
     }
 }

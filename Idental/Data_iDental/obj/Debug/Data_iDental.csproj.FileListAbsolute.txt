@@ -3,3 +3,8 @@ C:\Users\Administrator\Documents\Visual Studio 2015\Projects\API_QuanLyBenhNhan\
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\API_QuanLyBenhNhan\Data_iDental\obj\Debug\Data_iDental.dll
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\API_QuanLyBenhNhan\Data_iDental\obj\Debug\Data_iDental.pdb
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\API_QuanLyBenhNhan\Data_iDental\obj\Debug\Data_iDental.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\GitHub\iDental\Idental\Data_iDental\bin\Debug\Data_iDental.dll
+C:\Users\Administrator\Desktop\GitHub\iDental\Idental\Data_iDental\bin\Debug\Data_iDental.pdb
+C:\Users\Administrator\Desktop\GitHub\iDental\Idental\Data_iDental\obj\Debug\Data_iDental.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\GitHub\iDental\Idental\Data_iDental\obj\Debug\Data_iDental.dll
+C:\Users\Administrator\Desktop\GitHub\iDental\Idental\Data_iDental\obj\Debug\Data_iDental.pdb
