@@ -18,3 +18,4 @@ C:\Users\Administrator\Documents\Visual Studio 2015\Projects\API_QuanLyBenhNhan\
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\API_QuanLyBenhNhan\WF_iDental\obj\Debug\WF_iDental.exe
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\API_QuanLyBenhNhan\WF_iDental\obj\Debug\WF_iDental.pdb
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\API_QuanLyBenhNhan\WF_iDental\obj\Debug\WF_iDental.EditAppointent.resources
+C:\Users\Administrator\Desktop\GitHub\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.exe
