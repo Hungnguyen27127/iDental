@@ -38,3 +38,5 @@ C:\Users\Administrator\Desktop\GitHub\iDental\Idental\WF_iDental\obj\Debug\WF_iD
 C:\Users\Administrator\Desktop\GitHub\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.Properties.Resources.resources
 C:\Users\Administrator\Desktop\GitHub\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.UserControls.UC_Appointment.resources
 C:\Users\Administrator\Desktop\GitHub\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\GitHub\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.UserControls.UC_MedicalRecord.resources
+C:\Users\Administrator\Desktop\GitHub\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.UserControls.UC_Home.resources

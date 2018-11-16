@@ -11,6 +11,6 @@ namespace Data_iDental.Entities
         public int DoctorID { get; set; }
         public string DoctorName { get; set; }
 
-        public string Position { get; set; }
+        //public string Position { get; set; }
     }
 }

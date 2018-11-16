@@ -93,6 +93,18 @@
     <Compile Include="UserControls\UC_Appointment.Designer.cs">
       <DependentUpon>UC_Appointment.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UC_Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Home.Designer.cs">
+      <DependentUpon>UC_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_MedicalRecord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_MedicalRecord.Designer.cs">
+      <DependentUpon>UC_MedicalRecord.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddAppointment.resx">
       <DependentUpon>AddAppointment.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +131,12 @@
     </Compile>
     <EmbeddedResource Include="UserControls\UC_Appointment.resx">
       <DependentUpon>UC_Appointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Home.resx">
+      <DependentUpon>UC_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_MedicalRecord.resx">
+      <DependentUpon>UC_MedicalRecord.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

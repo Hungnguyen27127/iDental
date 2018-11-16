@@ -36,14 +36,15 @@ namespace API_LichHen.Controllers
 
         //LoadCombobox
 
-        public IHttpActionResult GetDataForDoctorComboBox(Doctor position)
+        public IHttpActionResult GetDataForDoctorComboBox(bool getDoctor )
         {
-            List<Doctor> list = dao.LoadDataForDoctorComboBox(position);
-            //if (loaddata)
-            //{
-            //    return Ok(list);
-            //}
+            List<Doctor> list = dao.LoadDataForDoctorComboBox();
+            if (getDoctor)
+            {
+                return Ok(list);
+            }
             return NotFound();
+            
         }
 
         public IHttpActionResult PostLichHen([FromBody] Appointment lh)

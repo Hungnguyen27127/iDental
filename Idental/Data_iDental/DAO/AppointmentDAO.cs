@@ -34,29 +34,48 @@ namespace Data_iDental.DAO
             return result;
         }
 
-        public List<Doctor> LoadDataForDoctorComboBox( Doctor bs1)
+        public List<AppointmentShow> GetLichHenHomeNay()
         {
-            const string proc = "SP_XemDoctor";        
-
+            const string proc = "SP_XemLichHenHomNay";
             List<SqlParameter> para = new List<SqlParameter>()
             {
-                  new SqlParameter("POSITION",bs1.Position),
                 // new SqlParameter("employeeID - 1",employeeID - 2)// 1 là ten prameter trong Proc , 2 là tên parameter của hàm
             };
             IDataReader reader = DataProvider.ExecuteReader(proc, para);
-
-            List<Doctor> result = new List<Doctor>();
-            Doctor bs2;
-
+            List<AppointmentShow> result = new List<AppointmentShow>();
+            AppointmentShow lichhen;
             while (reader.Read())
             {
-                bs2 = new Doctor();
-                bs2.Position = Convert.ToString(reader["Position"]);
-                bs2.DoctorID = Convert.ToInt32(reader["DoctorID"]);
-                bs2.DoctorName = Convert.ToString(reader["DoctorName"]);
-
-                result.Add(bs2);
+                lichhen = new AppointmentShow();
+                lichhen.AppointmentID = Convert.ToInt32(reader["AppointmentID"]);
+                lichhen.Date = Convert.ToDateTime(reader["Date"]);
+                lichhen.EmployeeID = Convert.ToInt32(reader["EmployeeID"]);
+                lichhen.EmployeeName = Convert.ToString(reader["EmployeeName"]);
+                result.Add(lichhen);
             }
+
+            return result;
+        }
+
+        public List<Doctor> LoadDataForDoctorComboBox( )
+        {
+            const string proc = "SP_XemDoctor";
+            List<SqlParameter> para = new List<SqlParameter>()
+            {
+                // new SqlParameter("employeeID - 1",employeeID - 2)// 1 là ten prameter trong Proc , 2 là tên parameter của hàm                
+            };
+            IDataReader reader = DataProvider.ExecuteReader(proc, para);
+            List<Doctor> result = new List<Doctor>();
+            Doctor bs;
+            while (reader.Read())
+            {
+                bs = new Doctor();
+                bs.DoctorID = Convert.ToInt32(reader["DoctorID"]);
+                bs.DoctorName = Convert.ToString(reader["DoctorName"]);
+                                                       
+                result.Add(bs);
+            }
+
             return result;
         }
         public bool PostLichHen(Appointment lh)

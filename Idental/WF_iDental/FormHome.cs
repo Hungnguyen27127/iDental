@@ -48,11 +48,78 @@ namespace WF_iDental
 
         private void btnLichHen_Click(object sender, EventArgs e)
         {
-            moveSidePanel(btnHome);
+            moveSidePanel(btnLichHen);
             UC_Appointment uch = new UC_Appointment();
             addUserControl(uch);
         }
 
-      
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            moveSidePanel(btnHome);
+            UC_Home f = new UC_Home();
+            addUserControl(f);
+        }
+
+        private void btnBenhNhan_Click(object sender, EventArgs e)
+        {
+            moveSidePanel(btnBenhNhan);
+             //f = new formHome();
+            //addUserControl(f);
+        }
+
+       
+
+        private void btnautosize_Click(object sender, EventArgs e)
+        {
+            if (palMenuLeft.Width == 250)
+            {
+                palMenuLeft.Width = 88;
+            }
+            else
+                palMenuLeft.Width = 250;
+            if (palMenuLeft.Width == 88)
+            {
+                labName.Hide();
+               
+
+            }
+        }
+
+        private void palMenuLeft_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnMeterials_Click(object sender, EventArgs e)
+        {
+            moveSidePanel(btnMeterials);
+        }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            moveSidePanel(btnReport);
+        }
+
+        private void btnKhamChua_Click(object sender, EventArgs e)
+        {
+            moveSidePanel(btnKhamChua);
+        }
+
+        private void btnDichVu_Click(object sender, EventArgs e)
+        {
+            moveSidePanel(btnDichVu);
+        }
+
+        private void btnNhanVien_Click(object sender, EventArgs e)
+        {
+            moveSidePanel(btnNhanVien);
+        }
+
+        private void formHome_Load(object sender, EventArgs e)
+        {
+            moveSidePanel(btnHome);
+            UC_Home f = new UC_Home();
+            addUserControl(f);
+        }
     }
 }
