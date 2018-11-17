@@ -49,7 +49,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.labSearch = new System.Windows.Forms.Label();
-            this.txtDoctorID = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.palTop.SuspendLayout();
@@ -127,7 +126,6 @@
             this.palControl.Controls.Add(this.label2);
             this.palControl.Controls.Add(this.label1);
             this.palControl.Controls.Add(this.labSearch);
-            this.palControl.Controls.Add(this.txtDoctorID);
             this.palControl.Controls.Add(this.btnSearch);
             this.palControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.palControl.Location = new System.Drawing.Point(0, 409);
@@ -137,12 +135,12 @@
             // 
             // cbbDoctor
             // 
-            this.cbbDoctor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbbDoctor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.cbbDoctor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbDoctor.ForeColor = System.Drawing.SystemColors.ControlText;
             this.cbbDoctor.FormattingEnabled = true;
-            this.cbbDoctor.Location = new System.Drawing.Point(398, 43);
+            this.cbbDoctor.Location = new System.Drawing.Point(157, 43);
             this.cbbDoctor.Name = "cbbDoctor";
-            this.cbbDoctor.Size = new System.Drawing.Size(121, 21);
+            this.cbbDoctor.Size = new System.Drawing.Size(206, 26);
             this.cbbDoctor.TabIndex = 7;
             // 
             // panel1
@@ -246,9 +244,13 @@
             // 
             // dtpDateAppointment
             // 
-            this.dtpDateAppointment.Location = new System.Drawing.Point(157, 77);
+            this.dtpDateAppointment.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.dtpDateAppointment.CustomFormat = "dd/MM/yyyy";
+            this.dtpDateAppointment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpDateAppointment.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpDateAppointment.Location = new System.Drawing.Point(157, 83);
             this.dtpDateAppointment.Name = "dtpDateAppointment";
-            this.dtpDateAppointment.Size = new System.Drawing.Size(206, 20);
+            this.dtpDateAppointment.Size = new System.Drawing.Size(206, 26);
             this.dtpDateAppointment.TabIndex = 3;
             // 
             // label2
@@ -256,7 +258,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label2.Location = new System.Drawing.Point(34, 77);
+            this.label2.Location = new System.Drawing.Point(34, 83);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 20);
             this.label2.TabIndex = 2;
@@ -284,15 +286,6 @@
             this.labSearch.TabIndex = 2;
             this.labSearch.Text = "Tìm Kiếm:";
             // 
-            // txtDoctorID
-            // 
-            this.txtDoctorID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDoctorID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.txtDoctorID.Location = new System.Drawing.Point(157, 43);
-            this.txtDoctorID.Name = "txtDoctorID";
-            this.txtDoctorID.Size = new System.Drawing.Size(206, 21);
-            this.txtDoctorID.TabIndex = 1;
-            // 
             // btnSearch
             // 
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -304,6 +297,7 @@
             this.btnSearch.TabIndex = 0;
             this.btnSearch.Text = "  Tìm ";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // UC_Appointment
             // 
@@ -335,7 +329,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labSearch;
-        private System.Windows.Forms.TextBox txtDoctorID;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label labOption;

@@ -51,6 +51,33 @@ namespace WF_iDental.UserControls
             }
             return lichhen.ToList();
         }
+        public List<AppointmentShow> GetLHCuaBacSy()
+        {
+            IEnumerable<AppointmentShow> lichhen = null;
+
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(baseAddress);
+                //HTTP GET
+                var responseTask = client.GetAsync($"LoadHome?employeeID"+5);
+                responseTask.Wait();
+
+                var result = responseTask.Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    var readTask = result.Content.ReadAsAsync<IList<AppointmentShow>>();
+                    readTask.Wait();
+
+                    lichhen = readTask.Result;
+                }
+                else
+                {
+                    lichhen = Enumerable.Empty<AppointmentShow>();
+
+                }
+            }
+            return lichhen.ToList();
+        }
         private void UC_Home_Load(object sender, EventArgs e)
         {
             dgvLichHenHome.DataSource = GetAll();

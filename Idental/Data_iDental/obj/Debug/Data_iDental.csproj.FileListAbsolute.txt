@@ -8,3 +8,8 @@ C:\Users\Administrator\Desktop\GitHub\iDental\Idental\Data_iDental\bin\Debug\Dat
 C:\Users\Administrator\Desktop\GitHub\iDental\Idental\Data_iDental\obj\Debug\Data_iDental.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\GitHub\iDental\Idental\Data_iDental\obj\Debug\Data_iDental.dll
 C:\Users\Administrator\Desktop\GitHub\iDental\Idental\Data_iDental\obj\Debug\Data_iDental.pdb
+D:\GitHub\iDental\Idental\Data_iDental\bin\Debug\Data_iDental.dll
+D:\GitHub\iDental\Idental\Data_iDental\bin\Debug\Data_iDental.pdb
+D:\GitHub\iDental\Idental\Data_iDental\obj\Debug\Data_iDental.csprojResolveAssemblyReference.cache
+D:\GitHub\iDental\Idental\Data_iDental\obj\Debug\Data_iDental.dll
+D:\GitHub\iDental\Idental\Data_iDental\obj\Debug\Data_iDental.pdb

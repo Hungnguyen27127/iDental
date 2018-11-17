@@ -22,6 +22,16 @@ namespace API_LichHen.Controllers
 
             return Ok(list);
         }
+
+        public IHttpActionResult Get_TheoID(int employeeID)
+        {
+            List<AppointmentShow> list = dao.GetLichHenHomeNayCuaBacSy(employeeID);
+            if (list.Count ==0)
+            {
+                return NotFound();
+            }
+            return Ok();
+        }
     }
 }
     

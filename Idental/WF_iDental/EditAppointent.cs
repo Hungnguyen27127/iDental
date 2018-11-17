@@ -85,21 +85,51 @@ namespace WF_iDental
             }
 
         }
+        public List<Doctor> LoadDataDoctorComboBox()
+        {
+            List<Doctor> bs = null;
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(baseAddress);
+                //HTTP GET
+                var responseTask = client.GetAsync($"Appointment?getDoctor={true}");
+                responseTask.Wait();
+
+                var result = responseTask.Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    var readTask = result.Content.ReadAsAsync<List<Doctor>>();
+                    readTask.Wait();
+
+                    bs = readTask.Result;
+
+                }
+            }
+            return bs.ToList();
+        }
         private void EditAppointent_Load(object sender, EventArgs e)
         {
             Appointment lh = new Appointment();
             lh = GetByID(value);
-            txtDoctorID.Text = lh.EmployeeID.ToString();
             txtAppointmentID.Text = lh.AppointmentID.ToString();
+            cbbDoctor.DataSource = LoadDataDoctorComboBox();
+            cbbDoctor.ValueMember = "DoctorID";
+            cbbDoctor.DisplayMember = "DoctorName";
             dtpDateAppointment.Value = lh.Date;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+           
             int AppointmentID =Convert.ToInt32(txtAppointmentID.Text) ;
-            int DoctorID = Convert.ToInt32(txtDoctorID.Text);
+            int DoctorID = Convert.ToInt32(cbbDoctor.SelectedValue);
             DateTime date = dtpDateAppointment.Value;
             PutLichHen(AppointmentID, DoctorID, date);
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

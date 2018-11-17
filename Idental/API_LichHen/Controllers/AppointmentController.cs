@@ -34,6 +34,17 @@ namespace API_LichHen.Controllers
             return Ok(res);
         }
 
+        public IHttpActionResult Get_TheoIDBacSy(int employeeID)
+        {
+            List<AppointmentShow> list = dao.SearchLichHenTheoIDBacSy(employeeID);
+            if (list == null)
+            {
+                return NotFound();
+            }
+            return Ok(list);
+        }
+
+
         //LoadCombobox
 
         public IHttpActionResult GetDataForDoctorComboBox(bool getDoctor )

@@ -47,6 +47,28 @@ namespace Data_iDental.DAO
             while (reader.Read())
             {
                 lichhen = new AppointmentShow();
+                lichhen.AppointmentID = Convert.ToInt32(reader["AppointmentID"]);   
+                lichhen.Date = Convert.ToDateTime(reader["Date"]);
+                lichhen.EmployeeID = Convert.ToInt32(reader["EmployeeID"]);
+                lichhen.EmployeeName = Convert.ToString(reader["EmployeeName"]);
+                result.Add(lichhen);
+            }
+
+            return result;
+        }
+        public List<AppointmentShow> GetLichHenHomeNayCuaBacSy(int employeeID)
+        {
+            const string proc = "SP_XemLichHenHomNayCuaBacSy";
+            List<SqlParameter> para = new List<SqlParameter>()
+            {          
+                new SqlParameter("EMPLOYEEID",employeeID)
+            };
+            IDataReader reader = DataProvider.ExecuteReader(proc, para);
+            List<AppointmentShow> result = new List<AppointmentShow>();
+            AppointmentShow lichhen;
+            while (reader.Read())
+            {
+                lichhen = new AppointmentShow();
                 lichhen.AppointmentID = Convert.ToInt32(reader["AppointmentID"]);
                 lichhen.Date = Convert.ToDateTime(reader["Date"]);
                 lichhen.EmployeeID = Convert.ToInt32(reader["EmployeeID"]);
@@ -57,12 +79,32 @@ namespace Data_iDental.DAO
             return result;
         }
 
+        public List<AppointmentShow> SearchLichHenTheoIDBacSy(int employeeID) // Timf kieems lichj henj theo ma .
+        {
+            const string proc = "SP_TimKiemLichHenTheoMaBacSy";
+            List<SqlParameter> para = new List<SqlParameter>()
+            {
+                new SqlParameter("EMPLOYEEID", employeeID)
+            };
+            IDataReader reader = DataProvider.ExecuteReader(proc, para);
+            List<AppointmentShow> res = new List<AppointmentShow>();
+            AppointmentShow lichhen;
+            while (reader.Read())
+            {
+                lichhen = new AppointmentShow();
+                lichhen.AppointmentID = Convert.ToInt32(reader["AppointmentID"]);
+                lichhen.Date = Convert.ToDateTime(reader["Date"]);
+                lichhen.EmployeeID = Convert.ToInt32(reader["EmployeeID"]);
+                //lichhen.EmployeeName = Convert.ToString(reader["EmployeeName"]);
+                res.Add(lichhen) ;
+            }
+            return res;
+        }
         public List<Doctor> LoadDataForDoctorComboBox( )
         {
             const string proc = "SP_XemDoctor";
             List<SqlParameter> para = new List<SqlParameter>()
-            {
-                // new SqlParameter("employeeID - 1",employeeID - 2)// 1 là ten prameter trong Proc , 2 là tên parameter của hàm                
+            {               
             };
             IDataReader reader = DataProvider.ExecuteReader(proc, para);
             List<Doctor> result = new List<Doctor>();
@@ -70,8 +112,8 @@ namespace Data_iDental.DAO
             while (reader.Read())
             {
                 bs = new Doctor();
-                bs.DoctorID = Convert.ToInt32(reader["DoctorID"]);
-                bs.DoctorName = Convert.ToString(reader["DoctorName"]);
+                bs.DoctorID = Convert.ToInt32(reader["EmployeeID"]); 
+                bs.DoctorName = Convert.ToString(reader["EmployeeName"]); 
                                                        
                 result.Add(bs);
             }
@@ -141,7 +183,7 @@ namespace Data_iDental.DAO
         }
         public Appointment SearchLichHen(int appointmentID) // Timf kieems lichj henj theo ma .
         {
-            const string proc = "SP_TimKiemLichHenTheoMaNhanVien";
+            const string proc = "SP_TimKiemLichHenTheoMaLichHen";
             List<SqlParameter> para = new List<SqlParameter>()
             {
                 new SqlParameter("APPOINTMENTID", appointmentID)
@@ -159,5 +201,6 @@ namespace Data_iDental.DAO
             }
             return res;
         }
+        
     } 
 }

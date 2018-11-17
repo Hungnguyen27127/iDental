@@ -56,28 +56,28 @@ namespace WF_iDental.UserControls
             return lichhen.ToList();
         }
         //getDoctor
-        //public List<Doctor> LoadDataDoctorComboBox()
-        //{
-        //    List<Doctor> bs = null;
-        //    using (var client = new HttpClient())
-        //    {
-        //        client.BaseAddress = new Uri(baseAddress);
-        //        //HTTP GET
-        //        var responseTask = client.GetAsync($"Appointment?getDoctor={true}");
-        //        responseTask.Wait();
+        public List<Doctor> LoadDataDoctorComboBox()
+        {
+            List<Doctor> bs = null;
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(baseAddress);
+                //HTTP GET
+                var responseTask = client.GetAsync($"Appointment?getDoctor={true}");
+                responseTask.Wait();
 
-        //        var result = responseTask.Result;
-        //        if (result.IsSuccessStatusCode)
-        //        {
-        //            var readTask = result.Content.ReadAsAsync<List<Doctor>>();
-        //            readTask.Wait();
+                var result = responseTask.Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    var readTask = result.Content.ReadAsAsync<List<Doctor>>();
+                    readTask.Wait();
 
-        //            bs = readTask.Result;
+                    bs = readTask.Result;
 
-        //        }
-        //    }
-        //    return bs.ToList();
-        //}
+                }
+            }
+            return bs.ToList();
+        }
         // delete 
         public void DeleteAppointment(int AppointmentID)
         {
@@ -101,18 +101,40 @@ namespace WF_iDental.UserControls
                 }
             }
         }
+        public List<AppointmentShow> GetByIDBacSy(int employeeID)
+        {
+            IEnumerable<AppointmentShow> lichhen = null;
 
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(baseAddress);
+                //HTTP GET
+                var responseTask = client.GetAsync($"Appointment?employeeID="+employeeID);
+                responseTask.Wait();
+
+                var result = responseTask.Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    var readTask = result.Content.ReadAsAsync<IList<AppointmentShow>>();
+                    readTask.Wait();
+
+                    lichhen = readTask.Result;
+                }
+                else
+                {
+                    lichhen = Enumerable.Empty<AppointmentShow>();
+
+                }
+            }
+            return lichhen.ToList();
+        }
 
         //call api   
         private void UC_Appointment_Load(object sender, EventArgs e)
         {
-            //List<Doctor> bs = LoadDataDoctorComboBox();
-            //int count = bs.Count;
-            //foreach (var itemm in bs)
-            //{
-            //    cbbDoctor.ValueMember = itemm.DoctorID.ToString();
-            //    cbbDoctor.DisplayMember = itemm.DoctorName;
-            //}
+            cbbDoctor.DataSource = LoadDataDoctorComboBox();
+            cbbDoctor.DisplayMember ="DoctorName";
+            cbbDoctor.ValueMember = "DoctorID";
             dgvLichHen.DataSource = GetAll();
             BindingData();
         }
@@ -157,10 +179,17 @@ namespace WF_iDental.UserControls
             dgvLichHen.DataSource = GetAll();
             BindingData();
         }
-
+            
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            int doctorid = Convert.ToInt32(cbbDoctor.SelectedValue);
+            dgvLichHen.DataSource = GetByIDBacSy(doctorid);
+            BindingData();
+        }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
+
     }
 }
