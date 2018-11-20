@@ -44,6 +44,8 @@
             this.btnBenhNhan = new System.Windows.Forms.Button();
             this.palMove = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.Button();
+            this.btnReport = new System.Windows.Forms.Button();
+            this.btnMeterials = new System.Windows.Forms.Button();
             this.btnNhanVien = new System.Windows.Forms.Button();
             this.btnDichVu = new System.Windows.Forms.Button();
             this.btnKhamChua = new System.Windows.Forms.Button();
@@ -51,8 +53,6 @@
             this.palContain = new System.Windows.Forms.Panel();
             this.palUC = new System.Windows.Forms.Panel();
             this.timerTime = new System.Windows.Forms.Timer(this.components);
-            this.btnMeterials = new System.Windows.Forms.Button();
-            this.btnReport = new System.Windows.Forms.Button();
             this.palTop2.SuspendLayout();
             this.palTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).BeginInit();
@@ -102,7 +102,7 @@
             this.labTime.AutoSize = true;
             this.labTime.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labTime.ForeColor = System.Drawing.Color.White;
-            this.labTime.Location = new System.Drawing.Point(838, 21);
+            this.labTime.Location = new System.Drawing.Point(843, 34);
             this.labTime.Name = "labTime";
             this.labTime.Size = new System.Drawing.Size(90, 22);
             this.labTime.TabIndex = 4;
@@ -118,6 +118,7 @@
             this.palTop.Name = "palTop";
             this.palTop.Size = new System.Drawing.Size(1000, 52);
             this.palTop.TabIndex = 5;
+            this.palTop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.palTop_MouseDown);
             // 
             // btnautosize
             // 
@@ -244,6 +245,42 @@
             this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
+            // btnReport
+            // 
+            this.btnReport.FlatAppearance.BorderSize = 0;
+            this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReport.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReport.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnReport.Image = ((System.Drawing.Image)(resources.GetObject("btnReport.Image")));
+            this.btnReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReport.Location = new System.Drawing.Point(11, 630);
+            this.btnReport.Name = "btnReport";
+            this.btnReport.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnReport.Size = new System.Drawing.Size(240, 62);
+            this.btnReport.TabIndex = 6;
+            this.btnReport.Text = "   Thống kê";
+            this.btnReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnReport.UseVisualStyleBackColor = true;
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
+            // 
+            // btnMeterials
+            // 
+            this.btnMeterials.FlatAppearance.BorderSize = 0;
+            this.btnMeterials.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMeterials.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMeterials.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnMeterials.Image = ((System.Drawing.Image)(resources.GetObject("btnMeterials.Image")));
+            this.btnMeterials.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMeterials.Location = new System.Drawing.Point(12, 562);
+            this.btnMeterials.Name = "btnMeterials";
+            this.btnMeterials.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnMeterials.Size = new System.Drawing.Size(240, 62);
+            this.btnMeterials.TabIndex = 6;
+            this.btnMeterials.Text = "   Vật Liệu";
+            this.btnMeterials.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMeterials.UseVisualStyleBackColor = true;
+            this.btnMeterials.Click += new System.EventHandler(this.btnMeterials_Click);
+            // 
             // btnNhanVien
             // 
             this.btnNhanVien.FlatAppearance.BorderSize = 0;
@@ -333,41 +370,9 @@
             this.palUC.Size = new System.Drawing.Size(1000, 569);
             this.palUC.TabIndex = 0;
             // 
-            // btnMeterials
+            // timerTime
             // 
-            this.btnMeterials.FlatAppearance.BorderSize = 0;
-            this.btnMeterials.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMeterials.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMeterials.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnMeterials.Image = ((System.Drawing.Image)(resources.GetObject("btnMeterials.Image")));
-            this.btnMeterials.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMeterials.Location = new System.Drawing.Point(12, 562);
-            this.btnMeterials.Name = "btnMeterials";
-            this.btnMeterials.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnMeterials.Size = new System.Drawing.Size(240, 62);
-            this.btnMeterials.TabIndex = 6;
-            this.btnMeterials.Text = "   Vật Liệu";
-            this.btnMeterials.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMeterials.UseVisualStyleBackColor = true;
-            this.btnMeterials.Click += new System.EventHandler(this.btnMeterials_Click);
-            // 
-            // btnReport
-            // 
-            this.btnReport.FlatAppearance.BorderSize = 0;
-            this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReport.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReport.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnReport.Image = ((System.Drawing.Image)(resources.GetObject("btnReport.Image")));
-            this.btnReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReport.Location = new System.Drawing.Point(11, 630);
-            this.btnReport.Name = "btnReport";
-            this.btnReport.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnReport.Size = new System.Drawing.Size(240, 62);
-            this.btnReport.TabIndex = 6;
-            this.btnReport.Text = "   Thống kê";
-            this.btnReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnReport.UseVisualStyleBackColor = true;
-            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
+            this.timerTime.Tick += new System.EventHandler(this.timerTime_Tick);
             // 
             // formHome
             // 

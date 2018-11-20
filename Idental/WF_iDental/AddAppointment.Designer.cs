@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbbDoctor = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.dtpDateAppointment = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cbbDoctor = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,6 +54,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(563, 291);
             this.panel1.TabIndex = 0;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // cbbDoctor
+            // 
+            this.cbbDoctor.FormattingEnabled = true;
+            this.cbbDoctor.Location = new System.Drawing.Point(234, 88);
+            this.cbbDoctor.Name = "cbbDoctor";
+            this.cbbDoctor.Size = new System.Drawing.Size(206, 21);
+            this.cbbDoctor.TabIndex = 32;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.label4.Location = new System.Drawing.Point(204, 23);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(170, 25);
+            this.label4.TabIndex = 31;
+            this.label4.Text = "Thêm Lịch Hẹn";
             // 
             // btnEdit
             // 
@@ -113,25 +133,6 @@
             this.label1.Size = new System.Drawing.Size(84, 20);
             this.label1.TabIndex = 9;
             this.label1.Text = "Mã bác sĩ :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label4.Location = new System.Drawing.Point(204, 23);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(170, 25);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "Thêm Lịch Hẹn";
-            // 
-            // cbbDoctor
-            // 
-            this.cbbDoctor.FormattingEnabled = true;
-            this.cbbDoctor.Location = new System.Drawing.Point(234, 88);
-            this.cbbDoctor.Name = "cbbDoctor";
-            this.cbbDoctor.Size = new System.Drawing.Size(206, 21);
-            this.cbbDoctor.TabIndex = 32;
             // 
             // AddAppointment
             // 

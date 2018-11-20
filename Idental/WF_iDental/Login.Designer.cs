@@ -58,6 +58,7 @@
             this.palTop.Name = "palTop";
             this.palTop.Size = new System.Drawing.Size(1250, 67);
             this.palTop.TabIndex = 1;
+            this.palTop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.palTop_MouseDown);
             // 
             // label2
             // 

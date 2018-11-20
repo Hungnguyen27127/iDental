@@ -95,7 +95,7 @@ namespace Data_iDental.DAO
                 lichhen.AppointmentID = Convert.ToInt32(reader["AppointmentID"]);
                 lichhen.Date = Convert.ToDateTime(reader["Date"]);
                 lichhen.EmployeeID = Convert.ToInt32(reader["EmployeeID"]);
-                //lichhen.EmployeeName = Convert.ToString(reader["EmployeeName"]);
+                lichhen.EmployeeName = Convert.ToString(reader["EmployeeName"]);
                 res.Add(lichhen) ;
             }
             return res;

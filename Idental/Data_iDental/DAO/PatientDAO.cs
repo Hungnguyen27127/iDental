@@ -11,7 +11,29 @@ namespace Data_iDental.DAO
 {
     public class PatientDAO
     {
-        public List<Patient>GetBenhNhan(string employeeID)
+        public List<Patient>GetAllPatient()
+        {
+            const string proc = "SP_XemBenhNhan";
+            List<SqlParameter> para = null;
+            IDataReader reader = DataProvider.ExecuteReader(proc, para );
+            List<Patient> result = new List<Patient>();
+            Patient benhnhan;
+            while (reader.Read())
+            {
+                benhnhan = new Patient();
+                benhnhan.PatientID = Convert.ToInt32(reader["PatientID"]);
+                benhnhan.PatientName = Convert.ToString(reader["PatientName"]);
+                benhnhan.DateOfBirth = Convert.ToDateTime(reader["DateOfBirth"]);
+                benhnhan.Gender = Convert.ToString(reader["Gender"]).Trim();
+
+                benhnhan.Address = Convert.ToString(reader["Address"]);
+                benhnhan.PhoneNumber = Convert.ToString(reader["PhoneNumber"]);
+                benhnhan.Image = Convert.ToString(reader["Image"]);
+                result.Add(benhnhan);
+            }
+            return result;
+        }
+        public List<Patient>GetBenhNhanTheoBacSy(string employeeID)
         {
             const string proc = "SP_XemBenhNhan";
             List<SqlParameter> para = new List<SqlParameter>()

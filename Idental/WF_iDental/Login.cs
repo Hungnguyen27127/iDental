@@ -29,10 +29,15 @@ namespace WF_iDental
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            using (formHome fh = new formHome())
-            {
-                fh.ShowDialog();
-            }
+            this.Visible = false;
+            formHome fh = new formHome();           
+            fh.ShowDialog();                                      
+        }
+
+        private void palTop_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }

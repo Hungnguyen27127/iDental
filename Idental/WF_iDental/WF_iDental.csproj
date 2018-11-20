@@ -105,6 +105,12 @@
     <Compile Include="UserControls\UC_MedicalRecord.Designer.cs">
       <DependentUpon>UC_MedicalRecord.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UC_Patient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Patient.Designer.cs">
+      <DependentUpon>UC_Patient.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddAppointment.resx">
       <DependentUpon>AddAppointment.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_MedicalRecord.resx">
       <DependentUpon>UC_MedicalRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Patient.resx">
+      <DependentUpon>UC_Patient.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

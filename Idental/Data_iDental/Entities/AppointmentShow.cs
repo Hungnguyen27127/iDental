@@ -8,7 +8,7 @@ namespace Data_iDental.Entities
 {
    public class AppointmentShow 
     {
-        public int AppointmentID { get; set; }
+        public int AppointmentID {  get; set; }
         public DateTime Date { get; set; }
         public int EmployeeID { get; set; }
 

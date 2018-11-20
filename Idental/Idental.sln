@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_QuanLyBenhNhan", "API_QuanLyBenhNhan\API_QuanLyBenhNhan.csproj", "{D5EFEC14-9277-452A-979F-D9FD8A3EE8E8}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF_iDental", "WF_iDental\WF_iDental.csproj", "{8F74C7AB-4921-42E2-976B-1175757BC259}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data_iDental", "Data_iDental\Data_iDental.csproj", "{0D0DB24C-1B12-47A1-8AD9-4F33AFA189A2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_LichHen", "API_LichHen\API_LichHen.csproj", "{9B3B271C-101D-45FA-B0CC-E97A99204EE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_BenhNhan", "API_BenhNhan\API_BenhNhan.csproj", "{37905CA2-7A04-4AD4-B77F-C4E19814D822}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D5EFEC14-9277-452A-979F-D9FD8A3EE8E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D5EFEC14-9277-452A-979F-D9FD8A3EE8E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D5EFEC14-9277-452A-979F-D9FD8A3EE8E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D5EFEC14-9277-452A-979F-D9FD8A3EE8E8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8F74C7AB-4921-42E2-976B-1175757BC259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8F74C7AB-4921-42E2-976B-1175757BC259}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F74C7AB-4921-42E2-976B-1175757BC259}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{9B3B271C-101D-45FA-B0CC-E97A99204EE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B3B271C-101D-45FA-B0CC-E97A99204EE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B3B271C-101D-45FA-B0CC-E97A99204EE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37905CA2-7A04-4AD4-B77F-C4E19814D822}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37905CA2-7A04-4AD4-B77F-C4E19814D822}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37905CA2-7A04-4AD4-B77F-C4E19814D822}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37905CA2-7A04-4AD4-B77F-C4E19814D822}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

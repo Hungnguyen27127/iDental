@@ -19,6 +19,7 @@ namespace WF_iDental
         public formHome()
         {
             InitializeComponent();
+            timerTime.Start();
         }
        
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -63,8 +64,8 @@ namespace WF_iDental
         private void btnBenhNhan_Click(object sender, EventArgs e)
         {
             moveSidePanel(btnBenhNhan);
-             //f = new formHome();
-            //addUserControl(f);
+             UC_Patient f = new UC_Patient();
+            addUserControl(f);
         }
 
        
@@ -120,6 +121,18 @@ namespace WF_iDental
             moveSidePanel(btnHome);
             UC_Home f = new UC_Home();
             addUserControl(f);
+        }
+
+        private void palTop_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void timerTime_Tick(object sender, EventArgs e)
+        {
+            DateTime dt = DateTime.Now ;
+            labTime.Text = dt.ToString("HH:MM:ss"); 
         }
     }
 }
