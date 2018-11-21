@@ -65,15 +65,14 @@ namespace Data_iDental.DAO
             const string proc = "SP_ThemBenhNhan";
 
             List<SqlParameter> para = new List<SqlParameter>()
-            {
-                new SqlParameter("MaKT",bn.PatientID),
-                new SqlParameter("Ngay", bn.PatientName),
-                new SqlParameter("LoaiKT", bn.DateOfBirth),
-                new SqlParameter("KhoanThu", bn.Gender),
+            {               
+                new SqlParameter("PATIENTNAME", bn.PatientName),
+                new SqlParameter("DATEOFBIRTH", bn.DateOfBirth),
+                new SqlParameter("GENDER", bn.Gender),
 
-                new SqlParameter("KhoanThu", bn.Address),
-                new SqlParameter("KhoanThu", bn.Image),
-                new SqlParameter("KhoanThu", bn.PhoneNumber),
+                new SqlParameter("ADDRESS", bn.Address),
+                new SqlParameter("IMAGE", bn.Image),
+                new SqlParameter("PHONENUMBER", bn.PhoneNumber),
             };
 
             int res = DataProvider.ExecuteNonQuery(proc, para);
@@ -93,16 +92,15 @@ namespace Data_iDental.DAO
 
             List<SqlParameter> para = new List<SqlParameter>()
             {
-                new SqlParameter("MaKT",bn.PatientID),
-                new SqlParameter("Ngay", bn.PatientName),
-                new SqlParameter("LoaiKT", bn.DateOfBirth),
-                new SqlParameter("KhoanThu", bn.Gender),
+                new SqlParameter("PATIENTID",bn.PatientID),
+                new SqlParameter("PATIENTNAME", bn.PatientName),
+                new SqlParameter("DATEOFBIRTH", bn.DateOfBirth),
+                new SqlParameter("GENDER", bn.Gender),
 
-                new SqlParameter("KhoanThu", bn.Address),
-                new SqlParameter("KhoanThu", bn.Image),
-                new SqlParameter("KhoanThu", bn.PhoneNumber),
+                new SqlParameter("ADDRESS", bn.Address),
+                new SqlParameter("IMAGE", bn.Image),
+                new SqlParameter("PHONENUMBER", bn.PhoneNumber),
             };
-
             int res = DataProvider.ExecuteNonQuery(proc, para);
 
             if (res != 0)
@@ -114,12 +112,12 @@ namespace Data_iDental.DAO
                 return false;
             }
         }
-        public bool DeleteBenhNhan(int employeeID)
+        public bool DeleteBenhNhan(int PatientID)
         {
             const string proc = "SP_XoaBenhNhan";
             List<SqlParameter> para = new List<SqlParameter>()
             {
-                new SqlParameter("mabn", employeeID)
+                new SqlParameter("PATIENTID", PatientID)
             };
             int res = DataProvider.ExecuteNonQuery(proc, para);
             if (res != 0)

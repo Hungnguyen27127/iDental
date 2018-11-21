@@ -22,6 +22,41 @@ namespace API_BenhNhan.Controllers
 
             return Ok(list);
         }
+        public IHttpActionResult PostPatient([FromBody] Patient bn)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest("Not a valid model");
 
+            if (dao.PostBenhNhan(bn) == false)
+            {
+                return BadRequest("Not a valid model");
+            }
+
+            return Ok();
+        }
+        public IHttpActionResult PutPatient([FromBody] Patient bn)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest("Not a valid model");
+
+            if (!dao.PutBenhNhan(bn))
+            {
+                return BadRequest("Not a valid model");
+            }
+
+            return Ok();
+        }
+        public IHttpActionResult DeletePatient(int PatientID)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest("Not a valid model");
+
+            if (!dao.DeleteBenhNhan(PatientID))
+            {
+                return BadRequest("Not a valid model");
+            }
+
+            return Ok();
+        }
     }
 }
