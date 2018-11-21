@@ -10,7 +10,7 @@ namespace Data_iDental.DAO
 {
     public class DataProvider
     {
-        public static string ConnectString = @"Data Source=VINADAT-DRDR127\SQLEXPRESS;Initial Catalog=iDental;Integrated Security=True";
+        public static string ConnectString = @"Data Source=DESKTOP-DCQC0R0;Initial Catalog=iDental;Integrated Security=True";
         /// <summary>
         /// Thực thi thủ tục sql, dùng cho lúc chỉ cần thực thi thủ tục, không cần return trả về
         /// </summary>
