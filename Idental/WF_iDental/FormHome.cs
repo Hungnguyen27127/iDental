@@ -132,7 +132,7 @@ namespace WF_iDental
         private void timerTime_Tick(object sender, EventArgs e)
         {
             DateTime dt = DateTime.Now ;
-            labTime.Text = dt.ToString("HH:MM:ss"); 
+            labTime.Text = dt.ToString("HH:mm:ss"); 
         }
     }
 }

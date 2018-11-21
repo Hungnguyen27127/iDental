@@ -58,8 +58,8 @@ D:\GitHub\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.NoticeForm.resources
 D:\GitHub\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.Properties.Resources.resources
 D:\GitHub\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.UserControls.UC_Appointment.resources
 D:\GitHub\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.UserControls.UC_Home.resources
-D:\GitHub\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.UserControls.UC_MedicalRecord.resources
 D:\GitHub\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.csproj.GenerateResource.Cache
 D:\GitHub\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.exe
 D:\GitHub\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.pdb
 D:\GitHub\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.UserControls.UC_Patient.resources
+D:\GitHub\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.Payment.resources

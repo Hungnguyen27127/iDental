@@ -186,11 +186,15 @@ namespace WF_iDental.UserControls
 
         private void dgvPatients_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+          
             if (e.RowIndex == -1) return; //check if row index is not selected
             if (dgvPatients.CurrentCell.ColumnIndex.Equals(0))
                 if (dgvPatients.CurrentCell != null && dgvPatients.CurrentCell.Value.ToString() != "")
                     {
+                    int id = Convert.ToInt32(dgvPatients.CurrentCell.Value.ToString());
+                    dgvLichSuKham.DataSource = GetAllRecords_TheoID(id);
+                    BindingData();
+                    labLSKName.Text = txtName.Text;
                     if (panelRecord.Width == 5 && panelRecord.BackColor == Color.MediumBlue)
                         {
                             panelRecord.BackColor = Color.White;
@@ -203,11 +207,39 @@ namespace WF_iDental.UserControls
                             panelRecord.Width = 5;
                             panelRecord.BackColor = Color.MediumBlue;
                         }
+                    
                     //MessageBox.Show(dgvPatients.CurrentCell.Value.ToString());
                 }                    
 
         }
 
+        public List<RecordShow> GetAllRecords_TheoID(int PatientID)
+        {
+            IEnumerable<RecordShow> lsk = null;
+
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(baseAddress);
+                //HTTP GET
+                var responseTask = client.GetAsync($"Records?PatientID="+ PatientID);
+                responseTask.Wait();
+
+                var result = responseTask.Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    var readTask = result.Content.ReadAsAsync<IList<RecordShow>>();
+                    readTask.Wait();
+
+                    lsk = readTask.Result;
+                }
+                else
+                {
+                    lsk = Enumerable.Empty<RecordShow>();
+
+                }
+            }
+            return lsk.ToList();
+        }
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
@@ -320,6 +352,15 @@ namespace WF_iDental.UserControls
         private void button2_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnPayment_Click(object sender, EventArgs e)
+        {
+
+            using (Payment f = new Payment ())
+            {
+                f.ShowDialog();
+            }
         }
     }
 }
