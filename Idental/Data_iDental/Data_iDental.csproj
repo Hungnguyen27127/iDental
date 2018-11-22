@@ -45,13 +45,16 @@
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\PatientDAO.cs" />
     <Compile Include="DAO\RecordDAO.cs" />
+    <Compile Include="DAO\ServiceDAO.cs" />
     <Compile Include="Entities\Account.cs" />
     <Compile Include="Entities\AppointmentShow.cs" />
     <Compile Include="Entities\Appointment.cs" />
     <Compile Include="Entities\Doctor.cs" />
     <Compile Include="Entities\Patient.cs" />
+    <Compile Include="Entities\Bill.cs" />
     <Compile Include="Entities\Record.cs" />
     <Compile Include="Entities\RecordShow.cs" />
+    <Compile Include="Entities\Service.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

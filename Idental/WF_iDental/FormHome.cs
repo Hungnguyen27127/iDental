@@ -109,6 +109,8 @@ namespace WF_iDental
         private void btnDichVu_Click(object sender, EventArgs e)
         {
             moveSidePanel(btnDichVu);
+            UC_Service s = new UC_Service();
+            addUserControl(s);
         }
 
         private void btnNhanVien_Click(object sender, EventArgs e)

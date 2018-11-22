@@ -60,11 +60,23 @@
     <Compile Include="AddAppointment.Designer.cs">
       <DependentUpon>AddAppointment.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddService.Designer.cs">
+      <DependentUpon>AddService.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditAppointent.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EditAppointent.Designer.cs">
       <DependentUpon>EditAppointent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditService.Designer.cs">
+      <DependentUpon>EditService.cs</DependentUpon>
     </Compile>
     <Compile Include="FormHome.cs">
       <SubType>Form</SubType>
@@ -111,11 +123,23 @@
     <Compile Include="UserControls\UC_Patient.Designer.cs">
       <DependentUpon>UC_Patient.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UC_Service.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Service.Designer.cs">
+      <DependentUpon>UC_Service.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddAppointment.resx">
       <DependentUpon>AddAppointment.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddService.resx">
+      <DependentUpon>AddService.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditAppointent.resx">
       <DependentUpon>EditAppointent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditService.resx">
+      <DependentUpon>EditService.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormHome.resx">
       <DependentUpon>FormHome.cs</DependentUpon>
@@ -146,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_Patient.resx">
       <DependentUpon>UC_Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Service.resx">
+      <DependentUpon>UC_Service.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
