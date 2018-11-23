@@ -76,7 +76,7 @@ namespace WF_iDental.UserControls
 
                 }
             }
-            return bs.ToList();
+            return bs;
         }
         // delete 
         public void DeleteAppointment(int AppointmentID)

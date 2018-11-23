@@ -89,3 +89,6 @@ C:\Users\HP\Documents\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.csproj.Gen
 C:\Users\HP\Documents\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.AddService.resources
 C:\Users\HP\Documents\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.EditService.resources
 C:\Users\HP\Documents\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.UserControls.UC_Service.resources
+D:\GitHub\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.AddService.resources
+D:\GitHub\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.EditService.resources
+D:\GitHub\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.UserControls.UC_Service.resources

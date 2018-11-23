@@ -94,5 +94,26 @@ namespace Data_iDental.DAO
                 return false;
             }
         }
+        public Service SearchService(int serviceID) // Timf kieems lichj henj theo ma .
+        {
+            const string proc = "SP_TimKiemDichVuTheoMaDichVu";
+            List<SqlParameter> para = new List<SqlParameter>()
+            {
+                new SqlParameter("SERVICEID", serviceID)
+            };
+            IDataReader reader = DataProvider.ExecuteReader(proc, para);
+            Service res = new Service();
+            Service dv;
+            while (reader.Read())
+            {
+                dv = new Service();
+                dv.ServiceID = Convert.ToInt32(reader["ServiceID"]);
+                dv.ServiceName = Convert.ToString(reader["ServiceName"]);
+                dv.UnitPrice = Convert.ToInt32(reader["UnitPrice"]);
+                dv.Notes = Convert.ToString(reader["Notes"]);
+                res = dv;
+            }
+            return res;
+        }
     }
 }

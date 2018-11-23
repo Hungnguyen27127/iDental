@@ -22,6 +22,17 @@ namespace API_DichVu.Controllers
 
             return Ok(list);
         }
+
+        public IHttpActionResult Get_TheoID(int serviceID)
+        {
+            Service res = dao.SearchService(serviceID);
+            if (res == null)
+            {
+                return NotFound();
+            }
+            return Ok(res);
+        } 
+
         public IHttpActionResult PostDichVu([FromBody] Service dv)
         {
             if (!ModelState.IsValid)

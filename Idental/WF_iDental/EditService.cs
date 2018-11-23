@@ -57,8 +57,6 @@ namespace WF_iDental
                 }
                 else
                 {
-
-
                 }
             }
             return dichvu;

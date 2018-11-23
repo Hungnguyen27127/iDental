@@ -57,7 +57,7 @@ namespace WF_iDental
                 }
                 else
                 {
-                   
+                    MessageBox.Show("Quang bảo chưa sửa được! ");
 
                 }
             }
