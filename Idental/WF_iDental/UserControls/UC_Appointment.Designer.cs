@@ -32,10 +32,6 @@
             this.palTop = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dgvLichHen = new System.Windows.Forms.DataGridView();
-            this.AppointmentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EmployeeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.palControl = new System.Windows.Forms.Panel();
             this.cbbDoctor = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -52,6 +48,11 @@
             this.labSearch = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.AppointmentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EmployeeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PatientName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.palTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLichHen)).BeginInit();
             this.palControl.SuspendLayout();
@@ -84,9 +85,10 @@
             this.dgvLichHen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLichHen.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.AppointmentID,
+            this.EmployeeID,
             this.EmployeeName,
             this.Date,
-            this.EmployeeID});
+            this.PatientName});
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -100,32 +102,7 @@
             this.dgvLichHen.Name = "dgvLichHen";
             this.dgvLichHen.Size = new System.Drawing.Size(1000, 409);
             this.dgvLichHen.TabIndex = 0;
-            // 
-            // AppointmentID
-            // 
-            this.AppointmentID.DataPropertyName = "AppointmentID";
-            this.AppointmentID.HeaderText = "Mã Lịch Hẹn";
-            this.AppointmentID.Name = "AppointmentID";
-            // 
-            // EmployeeName
-            // 
-            this.EmployeeName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.EmployeeName.DataPropertyName = "EmployeeName";
-            this.EmployeeName.HeaderText = "Tên Bác Sĩ";
-            this.EmployeeName.Name = "EmployeeName";
-            // 
-            // Date
-            // 
-            this.Date.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Date.DataPropertyName = "Date";
-            this.Date.HeaderText = "Ngày Hẹn";
-            this.Date.Name = "Date";
-            // 
-            // EmployeeID
-            // 
-            this.EmployeeID.DataPropertyName = "EmployeeID";
-            this.EmployeeID.HeaderText = "Mã Bác Sĩ";
-            this.EmployeeID.Name = "EmployeeID";
+            this.dgvLichHen.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLichHen_CellContentClick);
             // 
             // palControl
             // 
@@ -308,6 +285,39 @@
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
+            // AppointmentID
+            // 
+            this.AppointmentID.DataPropertyName = "AppointmentID";
+            this.AppointmentID.HeaderText = "Mã Lịch Hẹn";
+            this.AppointmentID.Name = "AppointmentID";
+            // 
+            // EmployeeID
+            // 
+            this.EmployeeID.DataPropertyName = "EmployeeID";
+            this.EmployeeID.HeaderText = "Mã Bác Sĩ";
+            this.EmployeeID.Name = "EmployeeID";
+            // 
+            // EmployeeName
+            // 
+            this.EmployeeName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.EmployeeName.DataPropertyName = "EmployeeName";
+            this.EmployeeName.HeaderText = "Tên Bác Sĩ";
+            this.EmployeeName.Name = "EmployeeName";
+            // 
+            // Date
+            // 
+            this.Date.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Date.DataPropertyName = "Date";
+            this.Date.HeaderText = "Ngày Hẹn";
+            this.Date.Name = "Date";
+            // 
+            // PatientName
+            // 
+            this.PatientName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.PatientName.DataPropertyName = "PatientName";
+            this.PatientName.HeaderText = "Tên Bệnh Nhân";
+            this.PatientName.Name = "PatientName";
+            // 
             // UC_Appointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -345,13 +355,14 @@
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnAdd;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AppointmentID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeID;
         private System.Windows.Forms.TextBox txtAppointment;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cbbDoctor;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AppointmentID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PatientName;
     }
 }

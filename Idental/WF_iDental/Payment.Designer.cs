@@ -55,7 +55,7 @@
             this.palTop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.palTop.Location = new System.Drawing.Point(0, 0);
             this.palTop.Name = "palTop";
-            this.palTop.Size = new System.Drawing.Size(955, 603);
+            this.palTop.Size = new System.Drawing.Size(894, 494);
             this.palTop.TabIndex = 0;
             // 
             // palContain
@@ -65,7 +65,7 @@
             this.palContain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.palContain.Location = new System.Drawing.Point(4, 57);
             this.palContain.Name = "palContain";
-            this.palContain.Size = new System.Drawing.Size(947, 536);
+            this.palContain.Size = new System.Drawing.Size(886, 427);
             this.palContain.TabIndex = 2;
             // 
             // btnBillCancle
@@ -74,7 +74,7 @@
             this.btnBillCancle.FlatAppearance.BorderSize = 0;
             this.btnBillCancle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBillCancle.ForeColor = System.Drawing.Color.OrangeRed;
-            this.btnBillCancle.Location = new System.Drawing.Point(807, 473);
+            this.btnBillCancle.Location = new System.Drawing.Point(746, 364);
             this.btnBillCancle.Name = "btnBillCancle";
             this.btnBillCancle.Size = new System.Drawing.Size(115, 49);
             this.btnBillCancle.TabIndex = 0;
@@ -87,7 +87,7 @@
             this.btnDone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDone.FlatAppearance.BorderSize = 0;
             this.btnDone.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDone.Location = new System.Drawing.Point(664, 473);
+            this.btnDone.Location = new System.Drawing.Point(603, 364);
             this.btnDone.Name = "btnDone";
             this.btnDone.Size = new System.Drawing.Size(115, 49);
             this.btnDone.TabIndex = 0;
@@ -99,18 +99,18 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(951, 57);
+            this.panel1.Location = new System.Drawing.Point(890, 57);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(4, 536);
+            this.panel1.Size = new System.Drawing.Size(4, 427);
             this.panel1.TabIndex = 1;
             // 
             // palBillBottom
             // 
             this.palBillBottom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.palBillBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.palBillBottom.Location = new System.Drawing.Point(4, 593);
+            this.palBillBottom.Location = new System.Drawing.Point(4, 484);
             this.palBillBottom.Name = "palBillBottom";
-            this.palBillBottom.Size = new System.Drawing.Size(951, 10);
+            this.palBillBottom.Size = new System.Drawing.Size(890, 10);
             this.palBillBottom.TabIndex = 0;
             // 
             // palBillTop
@@ -121,8 +121,9 @@
             this.palBillTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.palBillTop.Location = new System.Drawing.Point(4, 0);
             this.palBillTop.Name = "palBillTop";
-            this.palBillTop.Size = new System.Drawing.Size(951, 57);
+            this.palBillTop.Size = new System.Drawing.Size(890, 57);
             this.palBillTop.TabIndex = 0;
+            this.palBillTop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.palBillTop_MouseDown);
             // 
             // pictureBox1
             // 
@@ -151,20 +152,21 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(4, 603);
+            this.panel2.Size = new System.Drawing.Size(4, 494);
             this.panel2.TabIndex = 0;
             // 
             // Payment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(955, 603);
+            this.ClientSize = new System.Drawing.Size(894, 494);
             this.Controls.Add(this.palTop);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Payment";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Payment";
             this.palTop.ResumeLayout(false);
             this.palContain.ResumeLayout(false);

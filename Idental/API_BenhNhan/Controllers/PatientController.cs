@@ -22,6 +22,17 @@ namespace API_BenhNhan.Controllers
 
             return Ok(list);
         }
+
+        public IHttpActionResult GetShortenPatient( int patientID)
+        {
+            ShortenPatient bn = dao.GetShortenPatient(patientID);
+            if (bn == null)
+            {
+                return NotFound();
+            }
+            return Ok(bn);
+
+        }
         public IHttpActionResult PostPatient([FromBody] Patient bn)
         {
             if (!ModelState.IsValid)
@@ -57,6 +68,16 @@ namespace API_BenhNhan.Controllers
             }
 
             return Ok();
+        }
+        public IHttpActionResult GetPatient_byName(string name)
+        {
+            List<Patient> list = dao.SearchBenhNhan2(name);
+            if (list.Count == 0)
+            {
+                return NotFound();
+            }
+
+            return Ok(list);
         }
     }
 }

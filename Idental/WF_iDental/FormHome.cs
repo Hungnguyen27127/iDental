@@ -104,6 +104,8 @@ namespace WF_iDental
         private void btnKhamChua_Click(object sender, EventArgs e)
         {
             moveSidePanel(btnKhamChua);
+            UC_Diagnostic  f = new UC_Diagnostic();
+            addUserControl(f);
         }
 
         private void btnDichVu_Click(object sender, EventArgs e)
@@ -135,6 +137,11 @@ namespace WF_iDental
         {
             DateTime dt = DateTime.Now ;
             labTime.Text = dt.ToString("HH:mm:ss"); 
+        }
+
+        private void palTop_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -28,6 +28,8 @@ namespace Data_iDental.DAO
                 lichhen.Date = Convert.ToDateTime(reader["Date"]);
                 lichhen.EmployeeID = Convert.ToInt32(reader["EmployeeID"]);
                 lichhen.EmployeeName = Convert.ToString(reader["EmployeeName"]);
+                lichhen.PatientName = Convert.ToString(reader["PatientName"]);
+                lichhen.PhoneNumber = Convert.ToString(reader["PhoneNumber"]);
                 result.Add(lichhen);
             }
 
@@ -51,6 +53,8 @@ namespace Data_iDental.DAO
                 lichhen.Date = Convert.ToDateTime(reader["Date"]);
                 lichhen.EmployeeID = Convert.ToInt32(reader["EmployeeID"]);
                 lichhen.EmployeeName = Convert.ToString(reader["EmployeeName"]);
+                lichhen.PatientName = Convert.ToString(reader["Name"]);
+                lichhen.PhoneNumber = Convert.ToString(reader["PhoneNumber"]);
                 result.Add(lichhen);
             }
 
@@ -73,6 +77,8 @@ namespace Data_iDental.DAO
                 lichhen.Date = Convert.ToDateTime(reader["Date"]);
                 lichhen.EmployeeID = Convert.ToInt32(reader["EmployeeID"]);
                 lichhen.EmployeeName = Convert.ToString(reader["EmployeeName"]);
+                lichhen.PatientName = Convert.ToString(reader["Name"]);
+                lichhen.PhoneNumber = Convert.ToString(reader["PhoneNumber"]);
                 result.Add(lichhen);
             }
 
@@ -96,6 +102,8 @@ namespace Data_iDental.DAO
                 lichhen.Date = Convert.ToDateTime(reader["Date"]);
                 lichhen.EmployeeID = Convert.ToInt32(reader["EmployeeID"]);
                 lichhen.EmployeeName = Convert.ToString(reader["EmployeeName"]);
+                lichhen.PatientName = Convert.ToString(reader["PatientName"]);
+                lichhen.PhoneNumber = Convert.ToString(reader["PhoneNumber"]);
                 res.Add(lichhen) ;
             }
             return res;
@@ -127,7 +135,9 @@ namespace Data_iDental.DAO
             List<SqlParameter> para = new List<SqlParameter>()
             {             
                 new SqlParameter("DATE", lh.Date),
-                new SqlParameter("EMPLOYEEID", lh.EmployeeID),              
+                new SqlParameter("EMPLOYEEID", lh.EmployeeID),   
+                new SqlParameter ("NAME" , lh.PatientName) ,
+                new SqlParameter ("PHONENUMBER" , lh.PhoneNumber)
             };
 
             int res = DataProvider.ExecuteNonQuery(proc, para);
@@ -150,7 +160,8 @@ namespace Data_iDental.DAO
                 new SqlParameter("APPOINTMENTID",lh.AppointmentID),
                 new SqlParameter("DATE", lh.Date),
                 new SqlParameter("EMPLOYEEID", lh.EmployeeID),
-              // new SqlParameter("KhoanThu", lh.Name),               
+                 new SqlParameter ("PATIENTNAME" , lh.PatientName),
+                new SqlParameter ("PHONENUMBER" , lh.PhoneNumber)
             };
 
             int res = DataProvider.ExecuteNonQuery(proc, para);
@@ -181,7 +192,7 @@ namespace Data_iDental.DAO
                 return false;
             }
         }
-        public Appointment SearchLichHen(int appointmentID) // Timf kieems lichj henj theo ma .
+        public Appointment SearchLichHen(int appointmentID)
         {
             const string proc = "SP_TimKiemLichHenTheoMaLichHen";
             List<SqlParameter> para = new List<SqlParameter>()
@@ -197,6 +208,8 @@ namespace Data_iDental.DAO
                 lichhen.AppointmentID = Convert.ToInt32(reader["AppointmentID"]);
                 lichhen.Date = Convert.ToDateTime(reader["Date"]);
                 lichhen.EmployeeID = Convert.ToInt32(reader["EmployeeID"]);
+                lichhen.PatientName = Convert.ToString(reader["PatientName"]);
+                lichhen.PhoneNumber = Convert.ToString(reader["PhoneNumber"]);
                 res = lichhen;
             }
             return res;

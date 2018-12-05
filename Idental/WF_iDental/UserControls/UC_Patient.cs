@@ -60,7 +60,7 @@ namespace WF_iDental.UserControls
             dtpDateOfBirth.DataBindings.Add("Text", dgvPatients.DataSource, "DateOfBirth");
         }
         //api
-        public List<Patient> GetAll()
+        public List<Patient> GetAllPatient()
         {
             IEnumerable<Patient> lichhen = null;
 
@@ -87,6 +87,34 @@ namespace WF_iDental.UserControls
             }
             return lichhen.ToList();
         }
+
+        public List<RecordShow> GetAllRecord()
+        {
+            IEnumerable<RecordShow> lsk = null;
+
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(baseAddress);
+                //HTTP GET
+                var responseTask = client.GetAsync("Records");
+                responseTask.Wait();
+
+                var result = responseTask.Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    var readTask = result.Content.ReadAsAsync<IList<RecordShow>>();
+                    readTask.Wait();
+
+                    lsk = readTask.Result;
+                }
+                else
+                {
+                    lsk = Enumerable.Empty<RecordShow>();
+
+                }
+            }
+            return lsk.ToList();
+        } 
         public void PostPatient(string PatientName, DateTime DateOfBirth , string Gender , string PhoneNumber , string Address , string Image)
         {
 
@@ -171,14 +199,35 @@ namespace WF_iDental.UserControls
                 }
             }
         }
-        private void UC_Patient_Load(object sender, EventArgs e)
+        public List<Patient> SearchPatientByName(string name)
         {
-            dgvPatients.DataSource = GetAll();
-            txtPatientID.DataBindings.Clear();
-            txtPatientID.DataBindings.Add("Text", dgvPatients.DataSource, "PatientID");
+            IEnumerable<Patient> lichhen = null;
 
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(baseAddress);
+                //HTTP GET
+                var responseTask = client.GetAsync("Patient?name=" + name);
+                responseTask.Wait();
+
+                var result = responseTask.Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    var readTask = result.Content.ReadAsAsync<IList<Patient>>();
+                    readTask.Wait();
+
+                    lichhen = readTask.Result;
+                }
+                else
+                {
+                    lichhen = Enumerable.Empty<Patient>();
+
+                }
+            }
+            return lichhen.ToList();
         }
 
+      
         private void dgvPatients_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -240,13 +289,14 @@ namespace WF_iDental.UserControls
             }
             return lsk.ToList();
         }
-        private void panel3_Paint(object sender, PaintEventArgs e)
+  
+        private void UC_Patient_Load(object sender, EventArgs e)
         {
+            dgvPatients.DataSource = GetAllPatient();
+            dgvLichSuKham.DataSource = GetAllRecord();
+            txtPatientID.DataBindings.Clear();
+            txtPatientID.DataBindings.Add("Text", dgvPatients.DataSource, "PatientID");
 
-        }
-
-        private void palLett_Paint(object sender, PaintEventArgs e)
-        {
 
         }
 
@@ -255,20 +305,20 @@ namespace WF_iDental.UserControls
             if (panelRecord.Width == 5 && panelRecord.BackColor == Color.MediumBlue)
             {
                 panelRecord.BackColor = Color.White;
-                panelRecord.Width = 753;
+                panelRecord.Width = panel2.Width;
+                panelRecord.Dock = DockStyle.Fill;
 
             }
             else
-                       if (panelRecord.BackColor == Color.White)//panelRecord.Width==640 &&
-            {   
+                 if (panelRecord.BackColor == Color.White)//panelRecord.Width==640 &&
+            {
                 panelRecord.Width = 5;
                 panelRecord.BackColor = Color.MediumBlue;
             }
         }
-
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            
+
             txtName.Enabled = true;
             txtPhoneNumber.Enabled = true;
             txtAddress.Enabled = true;
@@ -277,7 +327,6 @@ namespace WF_iDental.UserControls
             dtpDateOfBirth.Enabled = true;
             BindingData();
         }
-
         private void cbbOptionts_SelectedIndexChanged(object sender, EventArgs e)
         {
             if(cbbOptionts.SelectedItem.ToString()=="Thêm")
@@ -318,7 +367,7 @@ namespace WF_iDental.UserControls
                 string address = txtAddress.Text;
                 string image = txtImage.Text;
                 PostPatient(name, dateofbirth, gender, phone, address, image);
-                dgvPatients.DataSource = GetAll();
+                dgvPatients.DataSource = GetAllPatient();
                 Reset();
 
             }
@@ -333,7 +382,7 @@ namespace WF_iDental.UserControls
                 string image = txtImage.Text;
                 
                 PutLichHen(PatientID, name, dateofbirth, gender, phone, address, image );
-                dgvPatients.DataSource = GetAll();
+                dgvPatients.DataSource = GetAllPatient();
                 BindingData();
             }
         }
@@ -344,14 +393,23 @@ namespace WF_iDental.UserControls
             BindingData();
             int PatientID = Convert.ToInt32(txtPatientID.Text);
             DeletePatient(PatientID);
-            dgvPatients.DataSource = GetAll();
+            dgvPatients.DataSource = GetAllPatient();
             BindingData();
 
         }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+            try
+            {
+                string name = txtSearch.Text;
+                dgvPatients.DataSource = SearchPatientByName(name);
+            }
+            catch (NullReferenceException ex)
+            {
 
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         private void btnPayment_Click(object sender, EventArgs e)
@@ -362,5 +420,35 @@ namespace WF_iDental.UserControls
                 f.ShowDialog();
             }
         }
+
+        
+
+
+
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void palLett_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string name = txtSearch.Text;
+                dgvPatients.DataSource = SearchPatientByName(name);
+            }
+            catch (NullReferenceException ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+        }
     }
 }
+    

@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace Data_iDental.Entities
 {
-   public class AppointmentShow 
+    public class AppointmentShow
     {
-        public int AppointmentID {  get; set; }
+        public int AppointmentID { get; set; }
         public DateTime Date { get; set; }
         public int EmployeeID { get; set; }
 
         public string EmployeeName { get; set; }
-    }
+        public string PatientName { get; set; }
+        public string PhoneNumber { get; set; }
+    } 
 }

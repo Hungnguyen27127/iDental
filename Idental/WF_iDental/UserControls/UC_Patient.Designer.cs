@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Patient));
             this.palLett = new System.Windows.Forms.Panel();
             this.cbbGender = new System.Windows.Forms.ComboBox();
@@ -79,6 +79,7 @@
             this.btnPayment = new System.Windows.Forms.Button();
             this.labLSKName = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.palLett.SuspendLayout();
             this.palRight.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -272,6 +273,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.txtSearch);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.btnSave);
             this.panel3.Controls.Add(this.cbbOptionts);
@@ -280,9 +282,9 @@
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.txtPatientID);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 479);
+            this.panel3.Location = new System.Drawing.Point(0, 441);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(0, 90);
+            this.panel3.Size = new System.Drawing.Size(743, 128);
             this.panel3.TabIndex = 5;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -292,7 +294,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label7.Location = new System.Drawing.Point(-363, 27);
+            this.label7.Location = new System.Drawing.Point(30, 80);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(36, 18);
             this.label7.TabIndex = 4;
@@ -304,9 +306,9 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.btnSave.Location = new System.Drawing.Point(2, 22);
+            this.btnSave.Location = new System.Drawing.Point(464, 74);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(88, 30);
+            this.btnSave.Size = new System.Drawing.Size(112, 30);
             this.btnSave.TabIndex = 3;
             this.btnSave.Text = "Lưu";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -323,7 +325,7 @@
             this.cbbOptionts.Items.AddRange(new object[] {
             "Thêm",
             "Sửa"});
-            this.cbbOptionts.Location = new System.Drawing.Point(-163, 22);
+            this.cbbOptionts.Location = new System.Drawing.Point(292, 76);
             this.cbbOptionts.Name = "cbbOptionts";
             this.cbbOptionts.Size = new System.Drawing.Size(136, 28);
             this.cbbOptionts.TabIndex = 1;
@@ -335,9 +337,9 @@
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.btnSearch.Location = new System.Drawing.Point(223, 22);
+            this.btnSearch.Location = new System.Drawing.Point(464, 25);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(114, 30);
+            this.btnSearch.Size = new System.Drawing.Size(112, 30);
             this.btnSearch.TabIndex = 3;
             this.btnSearch.Text = "Tìm Kiếm";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -349,9 +351,9 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.btnDelete.Location = new System.Drawing.Point(113, 22);
+            this.btnDelete.Location = new System.Drawing.Point(586, 75);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(86, 28);
+            this.btnDelete.Size = new System.Drawing.Size(106, 28);
             this.btnDelete.TabIndex = 3;
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -363,7 +365,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label1.Location = new System.Drawing.Point(-260, 26);
+            this.label1.Location = new System.Drawing.Point(195, 80);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 18);
             this.label1.TabIndex = 2;
@@ -374,9 +376,9 @@
             this.txtPatientID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPatientID.Enabled = false;
             this.txtPatientID.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPatientID.Location = new System.Drawing.Point(-321, 24);
+            this.txtPatientID.Location = new System.Drawing.Point(72, 77);
             this.txtPatientID.Name = "txtPatientID";
-            this.txtPatientID.Size = new System.Drawing.Size(42, 27);
+            this.txtPatientID.Size = new System.Drawing.Size(50, 27);
             this.txtPatientID.TabIndex = 3;
             // 
             // panel2
@@ -385,20 +387,20 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(0, 479);
+            this.panel2.Size = new System.Drawing.Size(743, 441);
             this.panel2.TabIndex = 4;
             // 
             // dgvPatients
             // 
-            this.dgvPatients.BackgroundColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPatients.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvPatients.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPatients.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvPatients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPatients.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.PatientID,
@@ -408,19 +410,19 @@
             this.PhoneNumber,
             this.Address,
             this.Image});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPatients.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPatients.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvPatients.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvPatients.Location = new System.Drawing.Point(0, 0);
             this.dgvPatients.Name = "dgvPatients";
             this.dgvPatients.ReadOnly = true;
-            this.dgvPatients.Size = new System.Drawing.Size(0, 479);
+            this.dgvPatients.Size = new System.Drawing.Size(743, 441);
             this.dgvPatients.TabIndex = 0;
             this.dgvPatients.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPatients_CellClick);
             this.dgvPatients.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPatients_CellContentClick);
@@ -490,9 +492,9 @@
             this.panelRecord.Controls.Add(this.panelTop);
             this.panelRecord.Controls.Add(this.panel1);
             this.panelRecord.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelRecord.Location = new System.Drawing.Point(-5, 0);
+            this.panelRecord.Location = new System.Drawing.Point(743, 0);
             this.panelRecord.Name = "panelRecord";
-            this.panelRecord.Size = new System.Drawing.Size(753, 569);
+            this.panelRecord.Size = new System.Drawing.Size(5, 569);
             this.panelRecord.TabIndex = 3;
             // 
             // panelBottom
@@ -501,7 +503,7 @@
             this.panelBottom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelBottom.Location = new System.Drawing.Point(0, 69);
             this.panelBottom.Name = "panelBottom";
-            this.panelBottom.Size = new System.Drawing.Size(748, 500);
+            this.panelBottom.Size = new System.Drawing.Size(0, 500);
             this.panelBottom.TabIndex = 4;
             // 
             // dgvLichSuKham
@@ -519,7 +521,7 @@
             this.dgvLichSuKham.Location = new System.Drawing.Point(0, 0);
             this.dgvLichSuKham.Name = "dgvLichSuKham";
             this.dgvLichSuKham.ReadOnly = true;
-            this.dgvLichSuKham.Size = new System.Drawing.Size(748, 500);
+            this.dgvLichSuKham.Size = new System.Drawing.Size(0, 500);
             this.dgvLichSuKham.TabIndex = 0;
             // 
             // MedicalRecordID
@@ -578,7 +580,7 @@
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(748, 69);
+            this.panelTop.Size = new System.Drawing.Size(0, 69);
             this.panelTop.TabIndex = 3;
             // 
             // label8
@@ -634,10 +636,19 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(748, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(5, 569);
             this.panel1.TabIndex = 2;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(33, 29);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(395, 26);
+            this.txtSearch.TabIndex = 5;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // UC_Patient
             // 
@@ -715,5 +726,6 @@
         private System.Windows.Forms.Button btnPayment;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label labLSKName;
+        private System.Windows.Forms.TextBox txtSearch;
     }
 }

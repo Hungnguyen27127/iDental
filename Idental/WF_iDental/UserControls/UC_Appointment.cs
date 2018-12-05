@@ -191,5 +191,9 @@ namespace WF_iDental.UserControls
 
         }
 
+        private void dgvLichHen_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

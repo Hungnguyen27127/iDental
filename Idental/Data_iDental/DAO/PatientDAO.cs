@@ -10,7 +10,7 @@ using Data_iDental.Entities;
 namespace Data_iDental.DAO
 {
     public class PatientDAO
-    {
+    {   
         public List<Patient>GetAllPatient()
         {
             const string proc = "SP_XemBenhNhan";
@@ -33,6 +33,28 @@ namespace Data_iDental.DAO
             }
             return result;
         }
+
+        public ShortenPatient GetShortenPatient(int patientID)
+        {
+            const string proc = "SP_TimBenhNhanTheoID";
+            List<SqlParameter> para = new List<SqlParameter>()
+            {
+                new SqlParameter("PATIENTID", patientID)
+            };
+            IDataReader reader = DataProvider.ExecuteReader(proc, para);
+            ShortenPatient res = new ShortenPatient();
+            ShortenPatient lichhen;
+            while (reader.Read())
+            {
+                lichhen = new ShortenPatient();
+                lichhen.PatientID = Convert.ToInt32(reader["PatientID"]);
+                lichhen.DateOfBirth = Convert.ToDateTime(reader["DateOfBirth"]);
+                lichhen.PatientName = Convert.ToString(reader["PatientName"]);
+                lichhen.Gender = Convert.ToString(reader["Gender"]);
+                res = lichhen;
+            }
+            return res;
+        } 
         public List<Patient>GetBenhNhanTheoBacSy(string employeeID)
         {
             const string proc = "SP_XemBenhNhan";
@@ -153,6 +175,31 @@ namespace Data_iDental.DAO
                 benhnhan.Image = Convert.ToString(reader["TenLKT"]);
                 res = benhnhan;
             }
+            return res;
+        }
+
+        public List<Patient> SearchBenhNhan2(string Patientname) // Tìm Kiếm Bệnh Nhân theo tên 
+        {
+            string query = $"select * from PATIENT where PatientName LIKE N'%{Patientname}%'";
+            List<Patient> res = new List<Patient>();
+            IDataReader reader = DataProvider.ExecuteReaderQuery(query);
+
+            Patient benhnhan;
+            while (reader.Read())
+            {
+                benhnhan = new Patient();
+                benhnhan.PatientID = Convert.ToInt32(reader["PatientID"]);
+                benhnhan.PatientName = Convert.ToString(reader["PatientName"]);
+                benhnhan.DateOfBirth = Convert.ToDateTime(reader["DateOfBirth"]);
+                benhnhan.Gender = Convert.ToString(reader["Gender"]).Trim();
+
+                benhnhan.Address = Convert.ToString(reader["Address"]);
+                benhnhan.PhoneNumber = Convert.ToString(reader["PhoneNumber"]);
+                benhnhan.Image = Convert.ToString(reader["Image"]);
+                
+                res.Add(benhnhan);
+            }
+
             return res;
         }
     }

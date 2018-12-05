@@ -32,13 +32,15 @@ namespace WF_iDental
         public string baseAddress = "http://localhost:55965/api/";
         // apipostnew
        
-        public void ThemLichHen(int DoctorID, DateTime date)
+        public void ThemLichHen(int DoctorID, DateTime date , string Name , string phone)
         {
          
             Appointment lh = new Appointment();
             
             lh.EmployeeID = DoctorID ;
-            lh.Date = date;          
+            lh.Date = date;
+            lh.PatientName = Name;
+            lh.PhoneNumber = phone;    
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri(baseAddress);
@@ -50,7 +52,8 @@ namespace WF_iDental
                 var result = postTask.Result;
                 if (result.IsSuccessStatusCode)
                 {
-                    this.Close();
+                    MessageBox.Show("Quang bảo  thêm được rồi ! ");
+                    this.Close(); 
                 }
                 else
                 {
@@ -90,9 +93,11 @@ namespace WF_iDental
         {
             int DoctorID = Convert.ToInt32(cbbDoctor.SelectedValue);
             DateTime date = dtpDateAppointment.Value;
-            
+            string Name = Convert.ToString(txtName.Text);
+            string phone = Convert.ToString(txtPhoneNumber.Text);
             //int AppointmentID =Convert.ToInt32(txtAppointmentID.Text) ;
-            ThemLichHen(DoctorID, date);
+            ThemLichHen(DoctorID, date,Name, phone);
+
          
         }
      

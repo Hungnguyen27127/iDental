@@ -231,5 +231,25 @@ namespace Data_iDental.DAO
             _command.Dispose();
             return result;
         }
+
+
+        public static SqlCommand CreateSqlCommand2(string query, CommandType commandType)
+        {
+            var _command = new SqlCommand()
+            {
+                Connection = OpenConnection(),
+                CommandText = query,
+                CommandType = commandType
+            };
+            return _command;
+        }
+        public static IDataReader ExecuteReaderQuery(string query) //
+        {
+            var _command = CreateSqlCommand2(query, CommandType.Text);
+            return _command.ExecuteReader(CommandBehavior.CloseConnection);
+        }
+
+
+
     }
 }

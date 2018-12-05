@@ -66,6 +66,12 @@
     <Compile Include="AddService.Designer.cs">
       <DependentUpon>AddService.cs</DependentUpon>
     </Compile>
+    <Compile Include="CompleteRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompleteRecord.Designer.cs">
+      <DependentUpon>CompleteRecord.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditAppointent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,12 @@
     <Compile Include="UserControls\UC_Appointment.Designer.cs">
       <DependentUpon>UC_Appointment.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UC_Diagnostic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Diagnostic.Designer.cs">
+      <DependentUpon>UC_Diagnostic.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UC_Home.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -134,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddService.resx">
       <DependentUpon>AddService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompleteRecord.resx">
+      <DependentUpon>CompleteRecord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditAppointent.resx">
       <DependentUpon>EditAppointent.cs</DependentUpon>
@@ -164,6 +179,9 @@
     </Compile>
     <EmbeddedResource Include="UserControls\UC_Appointment.resx">
       <DependentUpon>UC_Appointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Diagnostic.resx">
+      <DependentUpon>UC_Diagnostic.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_Home.resx">
       <DependentUpon>UC_Home.cs</DependentUpon>

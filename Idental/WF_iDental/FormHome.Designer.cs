@@ -41,18 +41,18 @@
             this.labName = new System.Windows.Forms.Label();
             this.picAvatar = new System.Windows.Forms.PictureBox();
             this.palMenuLeft = new System.Windows.Forms.Panel();
+            this.btnBenhNhan = new System.Windows.Forms.Button();
+            this.palMove = new System.Windows.Forms.Panel();
+            this.btnHome = new System.Windows.Forms.Button();
+            this.btnReport = new System.Windows.Forms.Button();
+            this.btnMeterials = new System.Windows.Forms.Button();
+            this.btnNhanVien = new System.Windows.Forms.Button();
+            this.btnDichVu = new System.Windows.Forms.Button();
+            this.btnKhamChua = new System.Windows.Forms.Button();
+            this.btnLichHen = new System.Windows.Forms.Button();
             this.palContain = new System.Windows.Forms.Panel();
             this.palUC = new System.Windows.Forms.Panel();
             this.timerTime = new System.Windows.Forms.Timer(this.components);
-            this.btnLichHen = new System.Windows.Forms.Button();
-            this.btnKhamChua = new System.Windows.Forms.Button();
-            this.btnDichVu = new System.Windows.Forms.Button();
-            this.btnNhanVien = new System.Windows.Forms.Button();
-            this.btnMeterials = new System.Windows.Forms.Button();
-            this.btnReport = new System.Windows.Forms.Button();
-            this.btnHome = new System.Windows.Forms.Button();
-            this.palMove = new System.Windows.Forms.Panel();
-            this.btnBenhNhan = new System.Windows.Forms.Button();
             this.palTop2.SuspendLayout();
             this.palTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).BeginInit();
@@ -118,6 +118,7 @@
             this.palTop.Name = "palTop";
             this.palTop.Size = new System.Drawing.Size(1000, 52);
             this.palTop.TabIndex = 5;
+            this.palTop.Paint += new System.Windows.Forms.PaintEventHandler(this.palTop_Paint);
             this.palTop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.palTop_MouseDown);
             // 
             // btnautosize
@@ -199,134 +200,32 @@
             this.palMenuLeft.TabIndex = 4;
             this.palMenuLeft.Paint += new System.Windows.Forms.PaintEventHandler(this.palMenuLeft_Paint);
             // 
-            // palContain
+            // btnBenhNhan
             // 
-            this.palContain.Controls.Add(this.palUC);
-            this.palContain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.palContain.Location = new System.Drawing.Point(250, 151);
-            this.palContain.Name = "palContain";
-            this.palContain.Size = new System.Drawing.Size(1000, 569);
-            this.palContain.TabIndex = 7;
+            this.btnBenhNhan.FlatAppearance.BorderSize = 0;
+            this.btnBenhNhan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumBlue;
+            this.btnBenhNhan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBenhNhan.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBenhNhan.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBenhNhan.Image = ((System.Drawing.Image)(resources.GetObject("btnBenhNhan.Image")));
+            this.btnBenhNhan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBenhNhan.Location = new System.Drawing.Point(8, 222);
+            this.btnBenhNhan.Name = "btnBenhNhan";
+            this.btnBenhNhan.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnBenhNhan.Size = new System.Drawing.Size(240, 62);
+            this.btnBenhNhan.TabIndex = 1;
+            this.btnBenhNhan.Text = "   Bệnh Nhân";
+            this.btnBenhNhan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBenhNhan.UseVisualStyleBackColor = false;
+            this.btnBenhNhan.Click += new System.EventHandler(this.btnBenhNhan_Click);
             // 
-            // palUC
+            // palMove
             // 
-            this.palUC.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.palUC.Location = new System.Drawing.Point(0, 0);
-            this.palUC.Name = "palUC";
-            this.palUC.Size = new System.Drawing.Size(1000, 569);
-            this.palUC.TabIndex = 0;
-            // 
-            // timerTime
-            // 
-            this.timerTime.Tick += new System.EventHandler(this.timerTime_Tick);
-            // 
-            // btnLichHen
-            // 
-            this.btnLichHen.FlatAppearance.BorderSize = 0;
-            this.btnLichHen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLichHen.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLichHen.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLichHen.Image = ((System.Drawing.Image)(resources.GetObject("btnLichHen.Image")));
-            this.btnLichHen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLichHen.Location = new System.Drawing.Point(9, 290);
-            this.btnLichHen.Name = "btnLichHen";
-            this.btnLichHen.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnLichHen.Size = new System.Drawing.Size(240, 62);
-            this.btnLichHen.TabIndex = 3;
-            this.btnLichHen.Text = "   Lịch Hẹn";
-            this.btnLichHen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLichHen.UseVisualStyleBackColor = true;
-            this.btnLichHen.Click += new System.EventHandler(this.btnLichHen_Click);
-            // 
-            // btnKhamChua
-            // 
-            this.btnKhamChua.FlatAppearance.BorderSize = 0;
-            this.btnKhamChua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKhamChua.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKhamChua.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnKhamChua.Image = ((System.Drawing.Image)(resources.GetObject("btnKhamChua.Image")));
-            this.btnKhamChua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKhamChua.Location = new System.Drawing.Point(10, 358);
-            this.btnKhamChua.Name = "btnKhamChua";
-            this.btnKhamChua.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnKhamChua.Size = new System.Drawing.Size(240, 62);
-            this.btnKhamChua.TabIndex = 4;
-            this.btnKhamChua.Text = "   Khám Chữa";
-            this.btnKhamChua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnKhamChua.UseVisualStyleBackColor = true;
-            this.btnKhamChua.Click += new System.EventHandler(this.btnKhamChua_Click);
-            // 
-            // btnDichVu
-            // 
-            this.btnDichVu.FlatAppearance.BorderSize = 0;
-            this.btnDichVu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDichVu.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDichVu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnDichVu.Image = ((System.Drawing.Image)(resources.GetObject("btnDichVu.Image")));
-            this.btnDichVu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDichVu.Location = new System.Drawing.Point(10, 426);
-            this.btnDichVu.Name = "btnDichVu";
-            this.btnDichVu.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnDichVu.Size = new System.Drawing.Size(240, 62);
-            this.btnDichVu.TabIndex = 5;
-            this.btnDichVu.Text = "   Dịch Vụ";
-            this.btnDichVu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDichVu.UseVisualStyleBackColor = true;
-            this.btnDichVu.Click += new System.EventHandler(this.btnDichVu_Click);
-            // 
-            // btnNhanVien
-            // 
-            this.btnNhanVien.FlatAppearance.BorderSize = 0;
-            this.btnNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNhanVien.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNhanVien.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnNhanVien.Image = ((System.Drawing.Image)(resources.GetObject("btnNhanVien.Image")));
-            this.btnNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNhanVien.Location = new System.Drawing.Point(10, 494);
-            this.btnNhanVien.Name = "btnNhanVien";
-            this.btnNhanVien.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnNhanVien.Size = new System.Drawing.Size(240, 62);
-            this.btnNhanVien.TabIndex = 6;
-            this.btnNhanVien.Text = "   Nhân Viên";
-            this.btnNhanVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnNhanVien.UseVisualStyleBackColor = true;
-            this.btnNhanVien.Click += new System.EventHandler(this.btnNhanVien_Click);
-            // 
-            // btnMeterials
-            // 
-            this.btnMeterials.FlatAppearance.BorderSize = 0;
-            this.btnMeterials.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMeterials.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMeterials.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnMeterials.Image = ((System.Drawing.Image)(resources.GetObject("btnMeterials.Image")));
-            this.btnMeterials.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMeterials.Location = new System.Drawing.Point(11, 562);
-            this.btnMeterials.Name = "btnMeterials";
-            this.btnMeterials.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnMeterials.Size = new System.Drawing.Size(240, 62);
-            this.btnMeterials.TabIndex = 6;
-            this.btnMeterials.Text = "   Vật Liệu";
-            this.btnMeterials.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMeterials.UseVisualStyleBackColor = true;
-            this.btnMeterials.Click += new System.EventHandler(this.btnMeterials_Click);
-            // 
-            // btnReport
-            // 
-            this.btnReport.FlatAppearance.BorderSize = 0;
-            this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReport.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReport.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnReport.Image = ((System.Drawing.Image)(resources.GetObject("btnReport.Image")));
-            this.btnReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReport.Location = new System.Drawing.Point(10, 630);
-            this.btnReport.Name = "btnReport";
-            this.btnReport.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnReport.Size = new System.Drawing.Size(240, 62);
-            this.btnReport.TabIndex = 6;
-            this.btnReport.Text = "   Thống kê";
-            this.btnReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnReport.UseVisualStyleBackColor = true;
-            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
+            this.palMove.BackColor = System.Drawing.Color.White;
+            this.palMove.Location = new System.Drawing.Point(0, 154);
+            this.palMove.Name = "palMove";
+            this.palMove.Size = new System.Drawing.Size(10, 62);
+            this.palMove.TabIndex = 4;
             // 
             // btnHome
             // 
@@ -347,32 +246,134 @@
             this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // palMove
+            // btnReport
             // 
-            this.palMove.BackColor = System.Drawing.Color.White;
-            this.palMove.Location = new System.Drawing.Point(0, 154);
-            this.palMove.Name = "palMove";
-            this.palMove.Size = new System.Drawing.Size(10, 62);
-            this.palMove.TabIndex = 4;
+            this.btnReport.FlatAppearance.BorderSize = 0;
+            this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReport.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReport.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnReport.Image = ((System.Drawing.Image)(resources.GetObject("btnReport.Image")));
+            this.btnReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReport.Location = new System.Drawing.Point(10, 630);
+            this.btnReport.Name = "btnReport";
+            this.btnReport.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnReport.Size = new System.Drawing.Size(240, 62);
+            this.btnReport.TabIndex = 6;
+            this.btnReport.Text = "   Thống kê";
+            this.btnReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnReport.UseVisualStyleBackColor = true;
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
-            // btnBenhNhan
+            // btnMeterials
             // 
-            this.btnBenhNhan.FlatAppearance.BorderSize = 0;
-            this.btnBenhNhan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumBlue;
-            this.btnBenhNhan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBenhNhan.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBenhNhan.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBenhNhan.Image = ((System.Drawing.Image)(resources.GetObject("btnBenhNhan.Image")));
-            this.btnBenhNhan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBenhNhan.Location = new System.Drawing.Point(8, 222);
-            this.btnBenhNhan.Name = "btnBenhNhan";
-            this.btnBenhNhan.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnBenhNhan.Size = new System.Drawing.Size(240, 62);
-            this.btnBenhNhan.TabIndex = 1;
-            this.btnBenhNhan.Text = "   Bệnh Nhân";
-            this.btnBenhNhan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBenhNhan.UseVisualStyleBackColor = false;
-            this.btnBenhNhan.Click += new System.EventHandler(this.btnBenhNhan_Click);
+            this.btnMeterials.FlatAppearance.BorderSize = 0;
+            this.btnMeterials.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMeterials.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMeterials.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnMeterials.Image = ((System.Drawing.Image)(resources.GetObject("btnMeterials.Image")));
+            this.btnMeterials.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMeterials.Location = new System.Drawing.Point(11, 562);
+            this.btnMeterials.Name = "btnMeterials";
+            this.btnMeterials.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnMeterials.Size = new System.Drawing.Size(240, 62);
+            this.btnMeterials.TabIndex = 6;
+            this.btnMeterials.Text = "   Vật Liệu";
+            this.btnMeterials.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMeterials.UseVisualStyleBackColor = true;
+            this.btnMeterials.Click += new System.EventHandler(this.btnMeterials_Click);
+            // 
+            // btnNhanVien
+            // 
+            this.btnNhanVien.FlatAppearance.BorderSize = 0;
+            this.btnNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNhanVien.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNhanVien.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnNhanVien.Image = ((System.Drawing.Image)(resources.GetObject("btnNhanVien.Image")));
+            this.btnNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNhanVien.Location = new System.Drawing.Point(10, 494);
+            this.btnNhanVien.Name = "btnNhanVien";
+            this.btnNhanVien.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnNhanVien.Size = new System.Drawing.Size(240, 62);
+            this.btnNhanVien.TabIndex = 6;
+            this.btnNhanVien.Text = "   Nhân Viên";
+            this.btnNhanVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNhanVien.UseVisualStyleBackColor = true;
+            this.btnNhanVien.Click += new System.EventHandler(this.btnNhanVien_Click);
+            // 
+            // btnDichVu
+            // 
+            this.btnDichVu.FlatAppearance.BorderSize = 0;
+            this.btnDichVu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDichVu.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDichVu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnDichVu.Image = ((System.Drawing.Image)(resources.GetObject("btnDichVu.Image")));
+            this.btnDichVu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDichVu.Location = new System.Drawing.Point(10, 426);
+            this.btnDichVu.Name = "btnDichVu";
+            this.btnDichVu.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnDichVu.Size = new System.Drawing.Size(240, 62);
+            this.btnDichVu.TabIndex = 5;
+            this.btnDichVu.Text = "   Dịch Vụ";
+            this.btnDichVu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDichVu.UseVisualStyleBackColor = true;
+            this.btnDichVu.Click += new System.EventHandler(this.btnDichVu_Click);
+            // 
+            // btnKhamChua
+            // 
+            this.btnKhamChua.FlatAppearance.BorderSize = 0;
+            this.btnKhamChua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKhamChua.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKhamChua.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnKhamChua.Image = ((System.Drawing.Image)(resources.GetObject("btnKhamChua.Image")));
+            this.btnKhamChua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKhamChua.Location = new System.Drawing.Point(10, 358);
+            this.btnKhamChua.Name = "btnKhamChua";
+            this.btnKhamChua.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnKhamChua.Size = new System.Drawing.Size(240, 62);
+            this.btnKhamChua.TabIndex = 4;
+            this.btnKhamChua.Text = "   Khám Chữa";
+            this.btnKhamChua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnKhamChua.UseVisualStyleBackColor = true;
+            this.btnKhamChua.Click += new System.EventHandler(this.btnKhamChua_Click);
+            // 
+            // btnLichHen
+            // 
+            this.btnLichHen.FlatAppearance.BorderSize = 0;
+            this.btnLichHen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLichHen.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLichHen.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnLichHen.Image = ((System.Drawing.Image)(resources.GetObject("btnLichHen.Image")));
+            this.btnLichHen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLichHen.Location = new System.Drawing.Point(9, 290);
+            this.btnLichHen.Name = "btnLichHen";
+            this.btnLichHen.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnLichHen.Size = new System.Drawing.Size(240, 62);
+            this.btnLichHen.TabIndex = 3;
+            this.btnLichHen.Text = "   Lịch Hẹn";
+            this.btnLichHen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLichHen.UseVisualStyleBackColor = true;
+            this.btnLichHen.Click += new System.EventHandler(this.btnLichHen_Click);
+            // 
+            // palContain
+            // 
+            this.palContain.Controls.Add(this.palUC);
+            this.palContain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.palContain.Location = new System.Drawing.Point(250, 151);
+            this.palContain.Name = "palContain";
+            this.palContain.Size = new System.Drawing.Size(1000, 569);
+            this.palContain.TabIndex = 7;
+            // 
+            // palUC
+            // 
+            this.palUC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.palUC.Location = new System.Drawing.Point(0, 0);
+            this.palUC.Name = "palUC";
+            this.palUC.Size = new System.Drawing.Size(1000, 569);
+            this.palUC.TabIndex = 0;
+            // 
+            // timerTime
+            // 
+            this.timerTime.Tick += new System.EventHandler(this.timerTime_Tick);
             // 
             // formHome
             // 

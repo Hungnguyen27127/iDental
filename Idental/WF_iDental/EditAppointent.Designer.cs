@@ -38,12 +38,16 @@
             this.dtpDateAppointment = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtPhoneNumber = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.Controls.Add(this.txtPhoneNumber);
+            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.cbbDoctor);
             this.panel1.Controls.Add(this.label3);
@@ -66,7 +70,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label4.Location = new System.Drawing.Point(202, 26);
+            this.label4.Location = new System.Drawing.Point(202, 19);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(153, 25);
             this.label4.TabIndex = 30;
@@ -74,11 +78,11 @@
             // 
             // cbbDoctor
             // 
-            this.cbbDoctor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbDoctor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbDoctor.FormattingEnabled = true;
-            this.cbbDoctor.Location = new System.Drawing.Point(207, 121);
+            this.cbbDoctor.Location = new System.Drawing.Point(231, 109);
             this.cbbDoctor.Name = "cbbDoctor";
-            this.cbbDoctor.Size = new System.Drawing.Size(206, 26);
+            this.cbbDoctor.Size = new System.Drawing.Size(206, 28);
             this.cbbDoctor.TabIndex = 29;
             // 
             // label3
@@ -86,7 +90,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label3.Location = new System.Drawing.Point(84, 80);
+            this.label3.Location = new System.Drawing.Point(100, 68);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(106, 20);
             this.label3.TabIndex = 28;
@@ -94,22 +98,22 @@
             // 
             // txtAppointmentID
             // 
-            this.txtAppointmentID.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAppointmentID.Location = new System.Drawing.Point(207, 80);
+            this.txtAppointmentID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAppointmentID.Location = new System.Drawing.Point(231, 68);
             this.txtAppointmentID.Name = "txtAppointmentID";
             this.txtAppointmentID.ReadOnly = true;
-            this.txtAppointmentID.Size = new System.Drawing.Size(91, 24);
+            this.txtAppointmentID.Size = new System.Drawing.Size(91, 26);
             this.txtAppointmentID.TabIndex = 27;
             // 
             // btnEdit
             // 
             this.btnEdit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdit.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.Color.OrangeRed;
-            this.btnEdit.Location = new System.Drawing.Point(413, 216);
+            this.btnEdit.Location = new System.Drawing.Point(416, 240);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(96, 31);
+            this.btnEdit.Size = new System.Drawing.Size(109, 29);
             this.btnEdit.TabIndex = 25;
             this.btnEdit.Text = "Hủy";
             this.btnEdit.UseVisualStyleBackColor = true;
@@ -119,11 +123,11 @@
             // 
             this.btnSave.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.btnSave.Location = new System.Drawing.Point(297, 216);
+            this.btnSave.Location = new System.Drawing.Point(286, 240);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(96, 31);
+            this.btnSave.Size = new System.Drawing.Size(109, 29);
             this.btnSave.TabIndex = 26;
             this.btnSave.Text = "Lưu";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -132,11 +136,11 @@
             // dtpDateAppointment
             // 
             this.dtpDateAppointment.CustomFormat = "dd/MM/yyyy";
-            this.dtpDateAppointment.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpDateAppointment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpDateAppointment.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDateAppointment.Location = new System.Drawing.Point(207, 162);
+            this.dtpDateAppointment.Location = new System.Drawing.Point(231, 150);
             this.dtpDateAppointment.Name = "dtpDateAppointment";
-            this.dtpDateAppointment.Size = new System.Drawing.Size(206, 24);
+            this.dtpDateAppointment.Size = new System.Drawing.Size(206, 26);
             this.dtpDateAppointment.TabIndex = 24;
             // 
             // label2
@@ -144,7 +148,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label2.Location = new System.Drawing.Point(84, 162);
+            this.label2.Location = new System.Drawing.Point(153, 150);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 20);
             this.label2.TabIndex = 22;
@@ -155,11 +159,30 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label1.Location = new System.Drawing.Point(84, 122);
+            this.label1.Location = new System.Drawing.Point(139, 111);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 20);
             this.label1.TabIndex = 23;
             this.label1.Text = "Bác Sỹ :";
+            // 
+            // txtPhoneNumber
+            // 
+            this.txtPhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhoneNumber.Location = new System.Drawing.Point(231, 193);
+            this.txtPhoneNumber.Name = "txtPhoneNumber";
+            this.txtPhoneNumber.Size = new System.Drawing.Size(206, 26);
+            this.txtPhoneNumber.TabIndex = 35;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.label5.Location = new System.Drawing.Point(95, 195);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(106, 20);
+            this.label5.TabIndex = 34;
+            this.label5.Text = "Số điện thoại:";
             // 
             // EditAppointent
             // 
@@ -191,5 +214,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbbDoctor;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtPhoneNumber;
+        private System.Windows.Forms.Label label5;
     }
 }
