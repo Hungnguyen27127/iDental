@@ -94,3 +94,5 @@ D:\GitHub\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.EditService.resources
 D:\GitHub\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.UserControls.UC_Service.resources
 D:\GitHub\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.UserControls.UC_Diagnostic.resources
 D:\GitHub\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.CompleteRecord.resources
+C:\Users\HP\Documents\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.CompleteRecord.resources
+C:\Users\HP\Documents\iDental\Idental\WF_iDental\obj\Debug\WF_iDental.UserControls.UC_Diagnostic.resources

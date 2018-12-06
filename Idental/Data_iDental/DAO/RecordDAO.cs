@@ -88,6 +88,9 @@ namespace Data_iDental.DAO
                 return false;
             }
         }
+       
+    
+
         public bool PutRecord(Record bn)
         {
             const string proc = "SP_SuaMedicalRecord";

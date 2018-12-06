@@ -58,6 +58,8 @@ namespace WF_iDental.UserControls
             cbbGender.DataBindings.Add("Text", dgvPatients.DataSource, "Gender");
             dtpDateOfBirth.DataBindings.Clear();
             dtpDateOfBirth.DataBindings.Add("Text", dgvPatients.DataSource, "DateOfBirth");
+            txtMedicalRecordID.DataBindings.Clear();
+            txtMedicalRecordID.DataBindings.Add("Text", dgvLichSuKham.DataSource, "MedicalRecordID");
         }
         //api
         public List<Patient> GetAllPatient()
@@ -296,6 +298,8 @@ namespace WF_iDental.UserControls
             dgvLichSuKham.DataSource = GetAllRecord();
             txtPatientID.DataBindings.Clear();
             txtPatientID.DataBindings.Add("Text", dgvPatients.DataSource, "PatientID");
+            txtMedicalRecordID.DataBindings.Clear();
+            txtMedicalRecordID.DataBindings.Add("Text", dgvLichSuKham.DataSource, "MedicalRecordID");
 
 
         }
@@ -414,16 +418,10 @@ namespace WF_iDental.UserControls
 
         private void btnPayment_Click(object sender, EventArgs e)
         {
+            Payment p = new Payment(txtMedicalRecordID.Text,txtName.Text);
+            p.ShowDialog();
 
-            using (Payment f = new Payment ())
-            {
-                f.ShowDialog();
-            }
         }
-
-        
-
-
 
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -448,6 +446,11 @@ namespace WF_iDental.UserControls
 
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

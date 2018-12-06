@@ -12,7 +12,7 @@ using System.Net.Http;
 
 namespace WF_iDental.UserControls
 {
-    public delegate void SendMessage(string value);
+    //public delegate void SendMessage(string value);
     public partial class UC_Diagnostic : UserControl
     {
         public UC_Diagnostic()
@@ -102,10 +102,8 @@ namespace WF_iDental.UserControls
 
         private void UC_Diagnostic_Load(object sender, EventArgs e)
         {
-            int id = 4; 
-            
-            dgvPatientforDoctor.DataSource = GetAllPatient();
-           
+            int id = 4;            
+            dgvPatientforDoctor.DataSource = GetAllPatient();           
             BindingData();
         }
 

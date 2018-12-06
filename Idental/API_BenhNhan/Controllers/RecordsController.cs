@@ -45,6 +45,7 @@ namespace API_BenhNhan.Controllers
 
             return Ok();
         }
+      
         public IHttpActionResult PutPatient([FromBody] Record bn)
         {
             if (!ModelState.IsValid)
