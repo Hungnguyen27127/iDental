@@ -15,5 +15,7 @@ namespace Data_iDental.Entities
         public string Diagnostic { get; set; }
         public string PaymentState { get; set; }  
         public string EmployeeName { get; set; }
+
+        public int BillID { get; set; }
     }
 }

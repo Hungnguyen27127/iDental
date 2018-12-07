@@ -160,8 +160,9 @@ namespace Data_iDental.DAO
                 new SqlParameter("APPOINTMENTID",lh.AppointmentID),
                 new SqlParameter("DATE", lh.Date),
                 new SqlParameter("EMPLOYEEID", lh.EmployeeID),
-                 new SqlParameter ("PATIENTNAME" , lh.PatientName),
-                new SqlParameter ("PHONENUMBER" , lh.PhoneNumber)
+                  new SqlParameter ("PHONENUMBER", lh.PhoneNumber),
+                 new SqlParameter ("PATIENTNAME", lh.PatientName),
+              
             };
 
             int res = DataProvider.ExecuteNonQuery(proc, para);

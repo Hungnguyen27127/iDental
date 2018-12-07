@@ -17,3 +17,4 @@ C:\Users\HP\Documents\iDental\Idental\Data_iDental\bin\Debug\Data_iDental.pdb
 C:\Users\HP\Documents\iDental\Idental\Data_iDental\obj\Debug\Data_iDental.csprojResolveAssemblyReference.cache
 C:\Users\HP\Documents\iDental\Idental\Data_iDental\obj\Debug\Data_iDental.dll
 C:\Users\HP\Documents\iDental\Idental\Data_iDental\obj\Debug\Data_iDental.pdb
+D:\GitHub\iDental\Idental\Data_iDental\obj\Debug\Data_iDental.csprojResolveAssemblyReference.cache

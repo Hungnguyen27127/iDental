@@ -202,5 +202,68 @@ namespace Data_iDental.DAO
 
             return res;
         }
+        //Ham Lay Du Lieu Cho Bang THuoc
+
+        public List<Medicine> Get_Thuoc()
+        {
+            const string proc = "SP_XemDanhMucThuoc";
+            List<SqlParameter> para = null;
+            IDataReader reader = DataProvider.ExecuteReader(proc, para);
+            List<Medicine> result = new List<Medicine>();
+            Medicine thuoc;
+            while (reader.Read())
+            {
+                thuoc = new Medicine();
+                thuoc.MedicineID = Convert.ToInt32(reader["MedicineID"]);
+                thuoc.MedicineName = Convert.ToString(reader["MedicineName"]);
+                thuoc.Category = Convert.ToString(reader["Category"]);
+
+                result.Add(thuoc);
+            }
+            return result;
+        }
+        public List<Medicine> Search_Thuoc(string Category) // Tìm Kiếm thuoc theo danh mục
+        {
+            string query = $"select * from MEDICINE where Category LIKE N'%{Category}%'";
+            List<Medicine> res = new List<Medicine>();
+            IDataReader reader = DataProvider.ExecuteReaderQuery(query);
+
+            Medicine thuoc;
+            while (reader.Read())
+            {
+                thuoc = new Medicine();
+                thuoc.MedicineID = Convert.ToInt32(reader["MedicineID"]);
+                thuoc.MedicineName = Convert.ToString(reader["MedicineName"]);
+                thuoc.Category = Convert.ToString(reader["Category"]);
+             
+
+                res.Add(thuoc);
+            }
+
+            return res;
+        }
+
+        //Hàm Tìm Kiếm CHo Dịch Vụ 
+        public List<Service> Search_DichVu(string ServiceName) // Tìm Kiếm Dv theo ten DV
+        {
+            string query = $"select * from SERVICE where ServiceName LIKE N'%{ServiceName}%'";
+            List<Service> res = new List<Service>();
+            IDataReader reader = DataProvider.ExecuteReaderQuery(query);
+
+            Service dv;
+            while (reader.Read())
+            {
+                dv = new Service();
+                dv.ServiceID = Convert.ToInt32(reader["ServiceID"]);
+                dv.ServiceName = Convert.ToString(reader["ServiceName"]);
+                dv.UnitPrice = Convert.ToInt32(reader["UnitPrice"]);
+                dv.Notes = Convert.ToString(reader["Notes"]);
+                res.Add(dv);
+            }
+
+            return res;
+        }
+
+
     }
 }

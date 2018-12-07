@@ -59,7 +59,7 @@ namespace WF_iDental.UserControls
             dtpDateOfBirth.DataBindings.Clear();
             dtpDateOfBirth.DataBindings.Add("Text", dgvPatients.DataSource, "DateOfBirth");
             txtMedicalRecordID.DataBindings.Clear();
-            txtMedicalRecordID.DataBindings.Add("Text", dgvLichSuKham.DataSource, "MedicalRecordID");
+            txtMedicalRecordID.DataBindings.Add("Text", dgvLichSuKham.DataSource, "BillID");
         }
         //api
         public List<Patient> GetAllPatient()
@@ -128,6 +128,7 @@ namespace WF_iDental.UserControls
             bn.PhoneNumber = PhoneNumber;
             bn.Address = Address;
             bn.Image = Image;
+
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri(baseAddress);
@@ -299,7 +300,7 @@ namespace WF_iDental.UserControls
             txtPatientID.DataBindings.Clear();
             txtPatientID.DataBindings.Add("Text", dgvPatients.DataSource, "PatientID");
             txtMedicalRecordID.DataBindings.Clear();
-            txtMedicalRecordID.DataBindings.Add("Text", dgvLichSuKham.DataSource, "MedicalRecordID");
+            txtMedicalRecordID.DataBindings.Add("Text", dgvLichSuKham.DataSource, "BillID");
 
 
         }

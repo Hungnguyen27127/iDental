@@ -56,7 +56,50 @@ namespace Data_iDental.DAO
                 return false;
             }
         }
+        public List<BillExtend> GetBillExtend( int patientID)
+        {
+            const string proc = "SP_DSHoaDonMoRong";
+            List<SqlParameter> para = new List<SqlParameter>()
+            {
+                new SqlParameter("PATIENTID",patientID)
+            };
+            IDataReader reader = DataProvider.ExecuteReader(proc, para);
+            List<BillExtend> result = new List<BillExtend>();
+            BillExtend hd;
+            while (reader.Read())
+            {
+                hd = new BillExtend();
+                hd.BillID = Convert.ToInt32(reader["BillID"]);
+                hd.PatientName = Convert.ToString(reader["PatientName"]);
+                hd.DateOfCreate = Convert.ToDateTime(reader["DateOfCreate"]);
+                hd.Diagnostic = Convert.ToString(reader["Diagnostic"]);
+                hd.MedicalRecordID  = Convert.ToInt32(reader["MedicalRecordID"]);
+                result.Add(hd);
+            }
+            return result;
+        }
 
+        public bool PostServiceDetail(ServiceDetail ctdv)
+        {
+            const string proc = "SP_ThemChiTietDichVu";
+
+            List<SqlParameter> para = new List<SqlParameter>()
+            {
+                new SqlParameter("SERVICEID", ctdv.ServiceID),
+                new SqlParameter("BILLID", ctdv.BillID),                
+            };
+
+            int res = DataProvider.ExecuteNonQuery(proc, para);
+
+            if (res > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
     }
 }

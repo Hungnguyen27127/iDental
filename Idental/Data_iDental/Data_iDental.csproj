@@ -49,11 +49,14 @@
     <Compile Include="DAO\ServiceDAO.cs" />
     <Compile Include="DAO\ServiceDetailDAO.cs" />
     <Compile Include="Entities\Account.cs" />
-    <Compile Include="Entities\AppointmentShow.cs" />
     <Compile Include="Entities\Appointment.cs" />
-    <Compile Include="Entities\Doctor.cs" />
-    <Compile Include="Entities\Patient.cs" />
+    <Compile Include="Entities\AppointmentShow.cs" />
     <Compile Include="Entities\Bill.cs" />
+    <Compile Include="Entities\BillExtend.cs" />
+    <Compile Include="Entities\Doctor.cs" />
+    <Compile Include="Entities\Medicine.cs" />
+    <Compile Include="Entities\MedicineDetail.cs" />
+    <Compile Include="Entities\Patient.cs" />
     <Compile Include="Entities\Record.cs" />
     <Compile Include="Entities\RecordShow.cs" />
     <Compile Include="Entities\Service.cs" />

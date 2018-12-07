@@ -63,7 +63,7 @@ namespace WF_iDental
             }
             return lichhen;
         }
-        public void PutLichHen(int AppointmentID, int DoctorID, DateTime date,string phone)
+        public void PutLichHen(int AppointmentID, int DoctorID, DateTime date,string phone,string name)
         {
 
             Appointment lh = new Appointment();
@@ -71,6 +71,7 @@ namespace WF_iDental
             lh.EmployeeID = DoctorID;
             lh.Date = date;
             lh.PhoneNumber = phone;
+            lh.PatientName = name; 
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri(baseAddress);
@@ -123,6 +124,7 @@ namespace WF_iDental
             cbbDoctor.ValueMember = "DoctorID";
             cbbDoctor.DisplayMember = "DoctorName";
             dtpDateAppointment.Value = lh.Date;
+            txtPatientName.Text = lh.PatientName.ToString();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -131,7 +133,8 @@ namespace WF_iDental
             int AppointmentID =Convert.ToInt32(txtAppointmentID.Text) ;
             int DoctorID = Convert.ToInt32(cbbDoctor.SelectedValue);
             DateTime date = dtpDateAppointment.Value;
-            PutLichHen(AppointmentID, DoctorID, date ,phone);
+            string name =Convert.ToString(txtPatientName.Text);
+            PutLichHen(AppointmentID, DoctorID, date ,phone,name);
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

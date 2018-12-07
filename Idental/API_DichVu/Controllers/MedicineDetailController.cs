@@ -9,17 +9,16 @@ using System.Web.Http;
 
 namespace API_DichVu.Controllers
 {
-    public class ServiceDetailController : ApiController
+    public class MedicineDetailController : ApiController
     {
         ServiceDetailDAO dao = new ServiceDetailDAO();
 
-
-        public IHttpActionResult PostChiTietDichVu([FromBody] ServiceDetail dv)
+        public IHttpActionResult PostChiTietDichVu([FromBody] MedicineDetail DT)
         {
             if (!ModelState.IsValid)
                 return BadRequest("Not a valid model");
 
-            if (dao.PostChiTietDichVu(dv) == false)
+            if (dao.Post_DonThuoc(DT) == false)
             {
                 return BadRequest("Not a valid model");
             }

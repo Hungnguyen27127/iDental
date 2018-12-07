@@ -117,14 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="BillID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="PatientName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="DateOfCreate.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Diagnostic.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="MedicalRecordID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnAddService.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAC6SURBVEhLYxip4LQDA8OZWgaGizJQAWqD0+oMDGf/AvF/oEXnoYLUBuf8IBaA8S+oILXBef9R
-        S0gAQ8uSC9rA5BmKHZ/tQlhy5g+mPAyfDWJgOCYENRAdgDLa2d8IgyjBZ+4BMRfUYGRwthpTMSUYlHkx
-        wAVpoO3AnHz2HQ78GYihBpwB0djUQPG52VBDSQWjSZgkMGoJSeCMN5IlX6GC1AbnBYCGP4RaMhcqSAtw
-        mx3oIzkoZ8QBBgYAFOnmQoEBb80AAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAALpJREFUSEtj
+        GKngtAMDw5laBoaLMlABaoPT6gwMZ/8C8X+gReehgtQG5/wgFoDxL6ggtcF5/1FLSABDy5IL2sDkGYod
+        n+1CWHLmD6Y8DJ8NYmA4JgQ1EB2AMtrZ3wiDKMFn7gExF9RgZHC2GlMxJRiUeTHABWmg7cCcfPYdDvwZ
+        iKEGnAHR2NRA8bnZUENJBaNJmCQwaglJ4Iw3kiVfoYLUBucFgIY/hFoyFypIC3CbHegjOShnxAEGBgAU
+        6eZCgQFvzQAAAABJRU5ErkJggg==
 </value>
   </data>
 </root>

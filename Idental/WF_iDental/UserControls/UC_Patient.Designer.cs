@@ -74,6 +74,7 @@
             this.Diagnostic = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PaymentState = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EmployeeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BillID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelTop = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.txtMedicalRecordID = new System.Windows.Forms.TextBox();
@@ -286,7 +287,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 441);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(745, 128);
+            this.panel3.Size = new System.Drawing.Size(738, 128);
             this.panel3.TabIndex = 5;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -305,7 +306,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label7.Location = new System.Drawing.Point(31, 80);
+            this.label7.Location = new System.Drawing.Point(28, 80);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(36, 18);
             this.label7.TabIndex = 4;
@@ -317,7 +318,7 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.btnSave.Location = new System.Drawing.Point(465, 74);
+            this.btnSave.Location = new System.Drawing.Point(462, 74);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(112, 30);
             this.btnSave.TabIndex = 3;
@@ -336,7 +337,7 @@
             this.cbbOptionts.Items.AddRange(new object[] {
             "Thêm",
             "Sửa"});
-            this.cbbOptionts.Location = new System.Drawing.Point(293, 76);
+            this.cbbOptionts.Location = new System.Drawing.Point(290, 76);
             this.cbbOptionts.Name = "cbbOptionts";
             this.cbbOptionts.Size = new System.Drawing.Size(136, 28);
             this.cbbOptionts.TabIndex = 1;
@@ -348,7 +349,7 @@
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.btnSearch.Location = new System.Drawing.Point(465, 25);
+            this.btnSearch.Location = new System.Drawing.Point(462, 25);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(112, 30);
             this.btnSearch.TabIndex = 3;
@@ -362,7 +363,7 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.btnDelete.Location = new System.Drawing.Point(587, 75);
+            this.btnDelete.Location = new System.Drawing.Point(584, 75);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(106, 28);
             this.btnDelete.TabIndex = 3;
@@ -376,7 +377,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label1.Location = new System.Drawing.Point(196, 80);
+            this.label1.Location = new System.Drawing.Point(193, 80);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 18);
             this.label1.TabIndex = 2;
@@ -387,7 +388,7 @@
             this.txtPatientID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPatientID.Enabled = false;
             this.txtPatientID.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPatientID.Location = new System.Drawing.Point(73, 77);
+            this.txtPatientID.Location = new System.Drawing.Point(70, 77);
             this.txtPatientID.Name = "txtPatientID";
             this.txtPatientID.Size = new System.Drawing.Size(50, 27);
             this.txtPatientID.TabIndex = 3;
@@ -398,7 +399,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(745, 441);
+            this.panel2.Size = new System.Drawing.Size(738, 441);
             this.panel2.TabIndex = 4;
             // 
             // dgvPatients
@@ -406,8 +407,8 @@
             this.dgvPatients.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
@@ -423,8 +424,8 @@
             this.Image});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -433,7 +434,7 @@
             this.dgvPatients.Location = new System.Drawing.Point(0, 0);
             this.dgvPatients.Name = "dgvPatients";
             this.dgvPatients.ReadOnly = true;
-            this.dgvPatients.Size = new System.Drawing.Size(745, 441);
+            this.dgvPatients.Size = new System.Drawing.Size(738, 441);
             this.dgvPatients.TabIndex = 0;
             this.dgvPatients.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPatients_CellClick);
             this.dgvPatients.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPatients_CellContentClick);
@@ -445,7 +446,7 @@
             this.PatientID.HeaderText = "Mã";
             this.PatientID.Name = "PatientID";
             this.PatientID.ReadOnly = true;
-            this.PatientID.Width = 52;
+            this.PatientID.Width = 54;
             // 
             // PatientName
             // 
@@ -494,7 +495,7 @@
             this.Image.HeaderText = "Hình Ảnh";
             this.Image.Name = "Image";
             this.Image.ReadOnly = true;
-            this.Image.Width = 79;
+            this.Image.Width = 85;
             // 
             // panelRecord
             // 
@@ -503,9 +504,9 @@
             this.panelRecord.Controls.Add(this.panelTop);
             this.panelRecord.Controls.Add(this.panel1);
             this.panelRecord.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelRecord.Location = new System.Drawing.Point(745, 0);
+            this.panelRecord.Location = new System.Drawing.Point(738, 0);
             this.panelRecord.Name = "panelRecord";
-            this.panelRecord.Size = new System.Drawing.Size(3, 569);
+            this.panelRecord.Size = new System.Drawing.Size(10, 569);
             this.panelRecord.TabIndex = 3;
             // 
             // panelBottom
@@ -514,7 +515,7 @@
             this.panelBottom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelBottom.Location = new System.Drawing.Point(0, 69);
             this.panelBottom.Name = "panelBottom";
-            this.panelBottom.Size = new System.Drawing.Size(0, 500);
+            this.panelBottom.Size = new System.Drawing.Size(5, 500);
             this.panelBottom.TabIndex = 4;
             // 
             // dgvLichSuKham
@@ -527,12 +528,13 @@
             this.DateOfCreate,
             this.Diagnostic,
             this.PaymentState,
-            this.EmployeeName});
+            this.EmployeeName,
+            this.BillID});
             this.dgvLichSuKham.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvLichSuKham.Location = new System.Drawing.Point(0, 0);
             this.dgvLichSuKham.Name = "dgvLichSuKham";
             this.dgvLichSuKham.ReadOnly = true;
-            this.dgvLichSuKham.Size = new System.Drawing.Size(0, 500);
+            this.dgvLichSuKham.Size = new System.Drawing.Size(5, 500);
             this.dgvLichSuKham.TabIndex = 0;
             // 
             // MedicalRecordID
@@ -582,6 +584,13 @@
             this.EmployeeName.Name = "EmployeeName";
             this.EmployeeName.ReadOnly = true;
             // 
+            // BillID
+            // 
+            this.BillID.DataPropertyName = "BillID";
+            this.BillID.HeaderText = "Mã hóa đơn";
+            this.BillID.Name = "BillID";
+            this.BillID.ReadOnly = true;
+            // 
             // panelTop
             // 
             this.panelTop.Controls.Add(this.label9);
@@ -593,7 +602,7 @@
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(0, 69);
+            this.panelTop.Size = new System.Drawing.Size(5, 69);
             this.panelTop.TabIndex = 3;
             // 
             // label9
@@ -602,7 +611,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label9.Location = new System.Drawing.Point(-335, 42);
+            this.label9.Location = new System.Drawing.Point(-333, 42);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(36, 18);
             this.label9.TabIndex = 9;
@@ -668,7 +677,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(-2, 0);
+            this.panel1.Location = new System.Drawing.Point(5, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(5, 569);
             this.panel1.TabIndex = 2;
@@ -740,17 +749,18 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtPatientID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MedicalRecordID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PatientNameRecord;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DateOfCreate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Diagnostic;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PaymentState;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeName;
         private System.Windows.Forms.Button btnPayment;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label labLSKName;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.TextBox txtMedicalRecordID;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MedicalRecordID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PatientNameRecord;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DateOfCreate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Diagnostic;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PaymentState;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BillID;
     }
 }

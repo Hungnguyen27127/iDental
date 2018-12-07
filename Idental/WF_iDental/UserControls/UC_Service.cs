@@ -128,5 +128,37 @@ namespace WF_iDental.UserControls
             BindingData();
 
         }
+        public List<Service> SearchServiceByName(string name)
+        {
+            IEnumerable<Service> sv = null;
+
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(baseAddress);
+                //HTTP GET
+                var responseTask = client.GetAsync("Medicine?ServiceName=" + name);
+                responseTask.Wait();
+
+                var result = responseTask.Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    var readTask = result.Content.ReadAsAsync<IList<Service>>();
+                    readTask.Wait();
+
+                    sv = readTask.Result;
+                }
+                else
+                {
+                    sv = Enumerable.Empty<Service>();
+
+                }
+            }
+            return sv.ToList();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            dgvDichVu.DataSource = SearchServiceByName(textBox1.Text.Trim());
+        }
     }
 }

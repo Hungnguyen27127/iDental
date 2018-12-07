@@ -16,7 +16,6 @@ namespace Data_iDental.DAO
             const string proc = "SP_XemLichSuKham";
             List<SqlParameter> para = new List<SqlParameter>()
             {
-             
             };
             IDataReader reader = DataProvider.ExecuteReader(proc, para);
             List<RecordShow> result = new List<RecordShow>();
@@ -31,6 +30,7 @@ namespace Data_iDental.DAO
 
                 lsk.Diagnostic = Convert.ToString(reader["Diagnostic"]);
                 lsk.EmployeeName = Convert.ToString(reader["EmployeeName"]);
+                lsk.BillID = Convert.ToInt32(reader["BillID"]);
 
                 result.Add(lsk);
             }
@@ -56,6 +56,7 @@ namespace Data_iDental.DAO
 
                 lsk.Diagnostic = Convert.ToString(reader["Diagnostic"]);
                 lsk.EmployeeName = Convert.ToString(reader["EmployeeName"]);
+                lsk.BillID = Convert.ToInt32(reader["BillID"]);
 
                 result.Add(lsk);
             }

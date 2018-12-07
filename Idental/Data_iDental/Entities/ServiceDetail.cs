@@ -11,5 +11,6 @@ namespace Data_iDental.Entities
      public int   ServiceDetailID { get; set; }
      public int ServiceID { get; set; }
      public int BillID { get; set; }
+     public int MedicalRecordID { get; set; }
     }
 }

@@ -14,8 +14,5 @@ namespace Data_iDental.Entities
         public string ServiceName { get; set; } 
         public int UnitPrice { get; set; }
         public int MedicalRecordID { get; set;}
-
-
-
     }
 }

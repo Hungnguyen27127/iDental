@@ -26,6 +26,7 @@ namespace WF_iDental.UserControls
 
         private void dgvPatientforDoctor_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            BindingData();
             if (e.RowIndex == -1) return; //check if row index is not selected
             if (dgvPatientforDoctor.CurrentCell.ColumnIndex.Equals(0))
                 if (dgvPatientforDoctor.CurrentCell != null && dgvPatientforDoctor.CurrentCell.Value.ToString() != "")
@@ -102,7 +103,7 @@ namespace WF_iDental.UserControls
 
         private void UC_Diagnostic_Load(object sender, EventArgs e)
         {
-            int id = 4;            
+          //  int id = 4;            
             dgvPatientforDoctor.DataSource = GetAllPatient();           
             BindingData();
         }

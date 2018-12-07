@@ -33,5 +33,30 @@ namespace Data_iDental.DAO
                 return false;
             }
         }
+
+        public bool Post_DonThuoc(MedicineDetail dt)
+        {
+
+            const string proc = "SP_ThemDonThuoc";
+
+            List<SqlParameter> para = new List<SqlParameter>()
+            {
+                new SqlParameter("MEDICALRECORDID",dt.MedicalRecordID ),
+                new SqlParameter("MEDICINEID",dt.MedicineID ),
+                new SqlParameter("AMONG",dt.Among),
+                new SqlParameter("USAGE",dt.Usage)
+            };
+
+            int res = DataProvider.ExecuteNonQuery(proc, para);
+
+            if (res > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

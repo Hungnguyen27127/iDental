@@ -12,6 +12,18 @@ namespace API_BenhNhan.Controllers
     public class BillController : ApiController
     {
         BillDAO dao = new BillDAO();
+
+        public IHttpActionResult GetDV(int patientID)//
+        {
+            List<BillExtend> list = dao.GetBillExtend(patientID);
+            if (list.Count == 0)
+            {
+                return NotFound();
+            }
+
+            return Ok(list);
+        }
+       
         public IHttpActionResult GetHD_TheoID(int MedicalRecordID)//
         {
             List<Bill> list = dao.GetHoaDon(MedicalRecordID);
@@ -34,6 +46,8 @@ namespace API_BenhNhan.Controllers
 
             return Ok();
         }
+
+
 
     }
    
