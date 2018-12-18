@@ -1,0 +1,368 @@
+D:\GitHub\iDental\Idental\API_BenhNhan\obj\Debug\API_BenhNhan.csprojResolveAssemblyReference.cache
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\ApplicationInsights.config
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\roslyn\csc.exe
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\roslyn\System.Collections.Immutable.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\roslyn\System.Reflection.Metadata.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\roslyn\vbc.exe
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\roslyn\VBCSCompiler.exe
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\roslyn\VBCSCompiler.exe.config
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\API_BenhNhan.dll.config
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\API_BenhNhan.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\API_BenhNhan.pdb
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Antlr3.Runtime.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Data_iDental.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\EntityFramework.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\EntityFramework.SqlServer.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.AI.Agent.Intercept.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.AI.DependencyCollector.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.AI.Web.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.AI.WindowsServer.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.ApplicationInsights.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.AspNet.Identity.Core.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Cookies.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Facebook.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Google.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.OAuth.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Twitter.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.Web.Infrastructure.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Newtonsoft.Json.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Owin.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\System.Net.Http.Formatting.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\System.Web.Helpers.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\System.Web.Http.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\System.Web.Http.Owin.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\System.Web.Http.WebHost.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\System.Web.Mvc.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\System.Web.Optimization.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\System.Web.Razor.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\System.Web.WebPages.Deployment.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\System.Web.WebPages.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\System.Web.WebPages.Razor.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\WebGrease.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Data_iDental.pdb
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.AI.DependencyCollector.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.AI.Web.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.AI.WindowsServer.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.ApplicationInsights.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Newtonsoft.Json.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\System.Net.Http.Formatting.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\System.Web.Helpers.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\System.Web.Http.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\System.Web.Http.WebHost.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\System.Web.Mvc.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\System.Web.Optimization.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\System.Web.Razor.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\System.Web.WebPages.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\System.Web.WebPages.Deployment.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\System.Web.WebPages.Razor.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Antlr3.Runtime.pdb
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\EntityFramework.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\EntityFramework.SqlServer.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.AspNet.Identity.Core.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Facebook.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Cookies.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.OAuth.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Google.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Twitter.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\bin\System.Web.Http.Owin.xml
+D:\GitHub\iDental\Idental\API_BenhNhan\obj\Debug\API_BenhNhan.dll
+D:\GitHub\iDental\Idental\API_BenhNhan\obj\Debug\API_BenhNhan.pdb
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\ApplicationInsights.config
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\roslyn\csc.exe
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\roslyn\vbc.exe
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\roslyn\VBCSCompiler.exe
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\API_BenhNhan.dll.config
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\API_BenhNhan.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\API_BenhNhan.pdb
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Antlr3.Runtime.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Data_iDental.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\EntityFramework.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\EntityFramework.SqlServer.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.AI.Web.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.ApplicationInsights.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Newtonsoft.Json.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Owin.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\System.Net.Http.Formatting.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\System.Web.Helpers.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\System.Web.Http.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\System.Web.Http.Owin.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\System.Web.Http.WebHost.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\System.Web.Mvc.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\System.Web.Optimization.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\System.Web.Razor.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\System.Web.WebPages.Deployment.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\System.Web.WebPages.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\System.Web.WebPages.Razor.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\WebGrease.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Data_iDental.pdb
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.AI.Web.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.ApplicationInsights.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Newtonsoft.Json.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\System.Net.Http.Formatting.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\System.Web.Helpers.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\System.Web.Http.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\System.Web.Http.WebHost.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\System.Web.Mvc.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\System.Web.Optimization.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\System.Web.Razor.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\System.Web.WebPages.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\System.Web.WebPages.Deployment.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\System.Web.WebPages.Razor.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Antlr3.Runtime.pdb
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\EntityFramework.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\EntityFramework.SqlServer.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\bin\System.Web.Http.Owin.xml
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\obj\Debug\API_BenhNhan.csprojResolveAssemblyReference.cache
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\obj\Debug\API_BenhNhan.dll
+C:\Users\HP\Documents\iDental\Idental\API_BenhNhan\obj\Debug\API_BenhNhan.pdb
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\ApplicationInsights.config
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\roslyn\csc.exe
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\roslyn\vbc.exe
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\roslyn\VBCSCompiler.exe
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\API_BenhNhan.dll.config
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\API_BenhNhan.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\API_BenhNhan.pdb
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Antlr3.Runtime.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Data_iDental.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\EntityFramework.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\EntityFramework.SqlServer.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AI.Web.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.ApplicationInsights.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Newtonsoft.Json.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Owin.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\System.Net.Http.Formatting.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Helpers.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Http.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Http.Owin.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Http.WebHost.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Mvc.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Optimization.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Razor.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\System.Web.WebPages.Deployment.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\System.Web.WebPages.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\System.Web.WebPages.Razor.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\WebGrease.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Data_iDental.pdb
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AI.Web.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.ApplicationInsights.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Newtonsoft.Json.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\System.Net.Http.Formatting.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Helpers.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Http.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Http.WebHost.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Mvc.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Optimization.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Razor.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\System.Web.WebPages.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\System.Web.WebPages.Deployment.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\System.Web.WebPages.Razor.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Antlr3.Runtime.pdb
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\EntityFramework.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\EntityFramework.SqlServer.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Http.Owin.xml
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\obj\Debug\API_BenhNhan.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\obj\Debug\API_BenhNhan.dll
+C:\Users\lenovo\Desktop\Idental (1)\Idental\API_BenhNhan\obj\Debug\API_BenhNhan.pdb
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\ApplicationInsights.config
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\roslyn\csc.exe
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\roslyn\System.Collections.Immutable.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\roslyn\System.Reflection.Metadata.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\roslyn\vbc.exe
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\roslyn\VBCSCompiler.exe
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\roslyn\VBCSCompiler.exe.config
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\API_BenhNhan.dll.config
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\API_BenhNhan.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\API_BenhNhan.pdb
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Antlr3.Runtime.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Data_iDental.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\EntityFramework.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\EntityFramework.SqlServer.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AI.Agent.Intercept.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AI.DependencyCollector.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AI.Web.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AI.WindowsServer.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.ApplicationInsights.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AspNet.Identity.Core.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Cookies.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Facebook.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Google.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.OAuth.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Twitter.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Web.Infrastructure.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Newtonsoft.Json.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Owin.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\System.Net.Http.Formatting.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Helpers.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Http.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Http.Owin.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Http.WebHost.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Mvc.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Optimization.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Razor.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\System.Web.WebPages.Deployment.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\System.Web.WebPages.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\System.Web.WebPages.Razor.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\WebGrease.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Data_iDental.pdb
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AI.DependencyCollector.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AI.Web.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AI.WindowsServer.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.ApplicationInsights.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Newtonsoft.Json.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\System.Net.Http.Formatting.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Helpers.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Http.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Http.WebHost.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Mvc.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Optimization.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Razor.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\System.Web.WebPages.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\System.Web.WebPages.Deployment.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\System.Web.WebPages.Razor.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Antlr3.Runtime.pdb
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\EntityFramework.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\EntityFramework.SqlServer.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AspNet.Identity.Core.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Facebook.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Cookies.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.OAuth.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Google.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.Twitter.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\bin\System.Web.Http.Owin.xml
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\obj\Debug\API_BenhNhan.csprojResolveAssemblyReference.cache
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\obj\Debug\API_BenhNhan.dll
+D:\GitHub\iDental\Idental (1)\Idental\API_BenhNhan\obj\Debug\API_BenhNhan.pdb
