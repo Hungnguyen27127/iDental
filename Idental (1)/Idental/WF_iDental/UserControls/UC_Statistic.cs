@@ -115,93 +115,7 @@ namespace WF_iDental.UserControls
 
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-            foreach (var series in chart1.Series)
-            {
-                series.Points.Clear();
-            }
-
-            if (comboBox1.Text == "Thống kê các dịch vụ và số người sử dụng")
-            {
-                chart1.Series["Dịch vụ"]["PixelPointWidth"] = "15";
-                List<TKService> temp = GetTKService();
-                for (int i = 0; i < temp.Count; i++)
-                {
-                    chart1.Series["Dịch vụ"].Points.AddXY(temp[i].ServiceName, temp[i].NumberOfuse);
-                    
-                }
-                int blockSize = 200;
-                Random rand = new Random();
-                var valuesArray = Enumerable.Range(0, blockSize * 30).Select(x => rand.Next(1, 10)).ToArray();
-                var chartArea = chart1.ChartAreas[chart1.Series["Dịch vụ"].ChartArea];
-                chartArea.AxisX.Minimum = 0;
-                chartArea.AxisX.Maximum = temp.Count;
-                chartArea.CursorX.AutoScroll = true;
-                chartArea.AxisX.ScaleView.Zoomable = true;
-                chartArea.AxisX.ScaleView.SizeType = DateTimeIntervalType.Number;
-                int position = 0;
-                int size = blockSize;
-                chartArea.AxisX.ScaleView.Zoom(position, size);
-                chartArea.AxisX.ScrollBar.ButtonStyle = ScrollBarButtonStyles.SmallScroll;
-                chartArea.AxisX.ScaleView.SmallScrollSize = blockSize;
-            }
-            if (comboBox1.Text == "Thống kê theo khoảng thời gian")
-            {
-                chart1.Series["Bệnh nhân"]["PixelPointWidth"] = "15";
-                List<Statistic> temp = GetTK(date1.Value, date2.Value);
-                for (int i = 0; i < temp.Count; i++)
-                {
-
-                    chart1.Series["Bệnh nhân"].Points.AddXY(temp[i].DateOfCreate.ToString("M/dd"), temp[i].PatientNumber);
-                    
-                }
-                int blockSize = 200;
-                Random rand = new Random();
-                var valuesArray = Enumerable.Range(0, blockSize * 30).Select(x => rand.Next(1, 10)).ToArray();
-                var chartArea = chart1.ChartAreas[chart1.Series["Bệnh nhân"].ChartArea];
-                chartArea.AxisX.Minimum = 0;
-                chartArea.AxisX.Maximum = temp.Count;
-                chartArea.CursorX.AutoScroll = true;
-                chartArea.AxisX.ScaleView.Zoomable = true;
-                chartArea.AxisX.ScaleView.SizeType = DateTimeIntervalType.Number;
-                int position = 0;
-                int size = blockSize;
-                chartArea.AxisX.ScaleView.Zoom(position, size);
-                chartArea.AxisX.ScrollBar.ButtonStyle = ScrollBarButtonStyles.SmallScroll;
-                chartArea.AxisX.ScaleView.SmallScrollSize = blockSize;
-            }
-            
-            if (comboBox1.Text == "Thống kê số bệnh nhân của từng bác sĩ")
-            {
-                chart1.Series["Bệnh nhân"]["PixelPointWidth"] = "15";
-                List<NumberOfPatient> temp = GetNOP();
-                for (int i = 0; i < temp.Count; i++)
-                {
-                    chart1.Series["Bệnh nhân"].Points.AddXY(temp[i].EmployeeName, temp[i].PatientNumber);
-                }
-                int blockSize = 100;
-                Random rand = new Random();
-                var valuesArray = Enumerable.Range(0, blockSize * 30).Select(x => rand.Next(1, 10)).ToArray();
-                var chartArea = chart1.ChartAreas[chart1.Series["Bệnh nhân"].ChartArea];
-                
-                chartArea.AxisX.Minimum = 0;
-                chartArea.AxisX.Maximum = temp.Count;
-                chartArea.CursorX.AutoScroll = true;
-                chartArea.AxisX.ScaleView.Zoomable = true;
-                chartArea.AxisX.ScaleView.SizeType = DateTimeIntervalType.Number;
-                int position = 0;
-                int size = blockSize;
-                chartArea.AxisX.ScaleView.Zoom(position, size);
-                chartArea.AxisX.ScrollBar.ButtonStyle = ScrollBarButtonStyles.SmallScroll;
-                chartArea.AxisX.ScaleView.SmallScrollSize = blockSize;
-            }
-            //chart1.Series["Bệnh nhân"].XValueMember = "DateOfCreate";
-            //chart1.Series["Bệnh nhân"].YValueMembers = "PatientNumber";
-            //chart1.DataSource = temp;
-            //chart1.DataBind();
-        }
-        
+     
         private void date1_ValueChanged(object sender, EventArgs e)
         {
 
@@ -242,6 +156,98 @@ namespace WF_iDental.UserControls
                 date2.Enabled = false;
                 
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnSearch_Click_1(object sender, EventArgs e)
+        {
+            foreach (var series in chart1.Series)
+            {
+                series.Points.Clear();
+            }
+
+            if (comboBox1.Text == "Thống kê các dịch vụ và số người sử dụng")
+            {
+                chart1.Series["Dịch vụ"]["PixelPointWidth"] = "15";
+                List<TKService> temp = GetTKService();
+                for (int i = 0; i < temp.Count; i++)
+                {
+                    chart1.Series["Dịch vụ"].Points.AddXY(temp[i].ServiceName, temp[i].NumberOfuse);
+
+                }
+                int blockSize = 200;
+                Random rand = new Random();
+                var valuesArray = Enumerable.Range(0, blockSize * 30).Select(x => rand.Next(1, 10)).ToArray();
+                var chartArea = chart1.ChartAreas[chart1.Series["Dịch vụ"].ChartArea];
+                chartArea.AxisX.Minimum = 0;
+                chartArea.AxisX.Maximum = temp.Count;
+                chartArea.CursorX.AutoScroll = true;
+                chartArea.AxisX.ScaleView.Zoomable = true;
+                chartArea.AxisX.ScaleView.SizeType = DateTimeIntervalType.Number;
+                int position = 0;
+                int size = blockSize;
+                chartArea.AxisX.ScaleView.Zoom(position, size);
+                chartArea.AxisX.ScrollBar.ButtonStyle = ScrollBarButtonStyles.SmallScroll;
+                chartArea.AxisX.ScaleView.SmallScrollSize = blockSize;
+            }
+            if (comboBox1.Text == "Thống kê theo khoảng thời gian")
+            {
+                chart1.Series["Bệnh nhân"]["PixelPointWidth"] = "15";
+                List<Statistic> temp = GetTK(date1.Value, date2.Value);
+                for (int i = 0; i < temp.Count; i++)
+                {
+
+                    chart1.Series["Bệnh nhân"].Points.AddXY(temp[i].DateOfCreate.ToString("M/dd"), temp[i].PatientNumber);
+
+                }
+                int blockSize = 200;
+                Random rand = new Random();
+                var valuesArray = Enumerable.Range(0, blockSize * 30).Select(x => rand.Next(1, 10)).ToArray();
+                var chartArea = chart1.ChartAreas[chart1.Series["Bệnh nhân"].ChartArea];
+                chartArea.AxisX.Minimum = 0;
+                chartArea.AxisX.Maximum = temp.Count;
+                chartArea.CursorX.AutoScroll = true;
+                chartArea.AxisX.ScaleView.Zoomable = true;
+                chartArea.AxisX.ScaleView.SizeType = DateTimeIntervalType.Number;
+                int position = 0;
+                int size = blockSize;
+                chartArea.AxisX.ScaleView.Zoom(position, size);
+                chartArea.AxisX.ScrollBar.ButtonStyle = ScrollBarButtonStyles.SmallScroll;
+                chartArea.AxisX.ScaleView.SmallScrollSize = blockSize;
+            }
+
+            if (comboBox1.Text == "Thống kê số bệnh nhân của từng bác sĩ")
+            {
+                chart1.Series["Bệnh nhân"]["PixelPointWidth"] = "15";
+                List<NumberOfPatient> temp = GetNOP();
+                for (int i = 0; i < temp.Count; i++)
+                {
+                    chart1.Series["Bệnh nhân"].Points.AddXY(temp[i].EmployeeName, temp[i].PatientNumber);
+                }
+                int blockSize = 100;
+                Random rand = new Random();
+                var valuesArray = Enumerable.Range(0, blockSize * 30).Select(x => rand.Next(1, 10)).ToArray();
+                var chartArea = chart1.ChartAreas[chart1.Series["Bệnh nhân"].ChartArea];
+
+                chartArea.AxisX.Minimum = 0;
+                chartArea.AxisX.Maximum = temp.Count;
+                chartArea.CursorX.AutoScroll = true;
+                chartArea.AxisX.ScaleView.Zoomable = true;
+                chartArea.AxisX.ScaleView.SizeType = DateTimeIntervalType.Number;
+                int position = 0;
+                int size = blockSize;
+                chartArea.AxisX.ScaleView.Zoom(position, size);
+                chartArea.AxisX.ScrollBar.ButtonStyle = ScrollBarButtonStyles.SmallScroll;
+                chartArea.AxisX.ScaleView.SmallScrollSize = blockSize;
+            }
+            //chart1.Series["Bệnh nhân"].XValueMember = "DateOfCreate";
+            //chart1.Series["Bệnh nhân"].YValueMembers = "PatientNumber";
+            //chart1.DataSource = temp;
+            //chart1.DataBind();
         }
     }
 }

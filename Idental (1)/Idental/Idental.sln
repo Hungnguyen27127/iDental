@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_DichVu", "API_DichVu\AP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_ThongKe", "API_ThongKe\API_ThongKe.csproj", "{00B6958F-18EC-4A73-873C-4DBE452CB4A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web_iDental", "Web_iDental\Web_iDental.csproj", "{A92E3AB4-667C-40CC-98E2-D360ADE24662}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_DangNhap", "API_DangNhap\API_DangNhap.csproj", "{244E967F-A426-4751-B376-A4987BAEA865}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{00B6958F-18EC-4A73-873C-4DBE452CB4A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00B6958F-18EC-4A73-873C-4DBE452CB4A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00B6958F-18EC-4A73-873C-4DBE452CB4A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A92E3AB4-667C-40CC-98E2-D360ADE24662}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A92E3AB4-667C-40CC-98E2-D360ADE24662}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A92E3AB4-667C-40CC-98E2-D360ADE24662}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A92E3AB4-667C-40CC-98E2-D360ADE24662}.Release|Any CPU.Build.0 = Release|Any CPU
+		{244E967F-A426-4751-B376-A4987BAEA865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{244E967F-A426-4751-B376-A4987BAEA865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{244E967F-A426-4751-B376-A4987BAEA865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{244E967F-A426-4751-B376-A4987BAEA865}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

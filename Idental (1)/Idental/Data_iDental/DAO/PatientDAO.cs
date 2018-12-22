@@ -263,7 +263,21 @@ namespace Data_iDental.DAO
 
             return res;
         }
+        //public bool Search_DichVu2(string ServiceName) // Tìm Kiếm Dv theo ten DV
+        //{
+        //    string query = $"delete SERVICE where ServiceName = N'{ServiceName}'";
+           
+        //    IDataReader res = DataProvider.ExecuteQuery(query);
 
+        //    if (res != 0)
+        //    {
+        //        return true;
+        //    }
+        //    else
+        //    {
+        //        return false;
+        //    }
+        //}
 
     }
 }

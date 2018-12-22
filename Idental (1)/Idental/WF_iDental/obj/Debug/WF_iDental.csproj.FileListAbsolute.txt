@@ -188,3 +188,4 @@ D:\GitHub\iDental\Idental (1)\Idental\WF_iDental\bin\Debug\Data_iDental.pdb
 D:\GitHub\iDental\Idental (1)\Idental\WF_iDental\bin\Debug\DevComponents.DotNetBar2.xml
 D:\GitHub\iDental\Idental (1)\Idental\WF_iDental\bin\Debug\Newtonsoft.Json.xml
 D:\GitHub\iDental\Idental (1)\Idental\WF_iDental\bin\Debug\System.Net.Http.Formatting.xml
+D:\GitHub\iDental\Idental (1)\Idental\WF_iDental\obj\Debug\WF_iDental.ConnectDB.resources

@@ -44,7 +44,7 @@ namespace WF_iDental
            
             int MedicalRecordID = Convert.ToInt32(txtMedicalRecordID.Text);
             PutPaymentState(MedicalRecordID);
-
+           // dgvBill.DataSource = GetChiTietHoaDon(MedicalRecordID);
             this.Close();
         }
 

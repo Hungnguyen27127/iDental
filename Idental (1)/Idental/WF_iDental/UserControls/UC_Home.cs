@@ -18,6 +18,14 @@ namespace WF_iDental.UserControls
         {
             InitializeComponent();
         }
+        int employeeid ;
+        //string name;
+        //string position;
+        public UC_Home(int EmployeeID) : this()
+        {
+            employeeid = EmployeeID;
+            //txtAppointmentID.Text = value.ToString();
+        }       
         public string baseAddress = "http://localhost:55965/api/";
         private void label1_Click(object sender, EventArgs e)
         {
@@ -51,7 +59,7 @@ namespace WF_iDental.UserControls
             }
             return lichhen.ToList();
         }
-        public List<AppointmentShow> GetLHCuaBacSy()
+        public List<AppointmentShow> GetByIDBacSy(int employeeID)
         {
             IEnumerable<AppointmentShow> lichhen = null;
 
@@ -59,7 +67,7 @@ namespace WF_iDental.UserControls
             {
                 client.BaseAddress = new Uri(baseAddress);
                 //HTTP GET
-                var responseTask = client.GetAsync($"LoadHome?employeeID"+5);
+                var responseTask = client.GetAsync($"Appointment?employeeID=" + employeeID);
                 responseTask.Wait();
 
                 var result = responseTask.Result;
@@ -80,7 +88,8 @@ namespace WF_iDental.UserControls
         }
         private void UC_Home_Load(object sender, EventArgs e)
         {
-            dgvLichHenHome.DataSource = GetAll();
+          
+            dgvLichHenHome.DataSource = GetByIDBacSy(employeeid);
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)

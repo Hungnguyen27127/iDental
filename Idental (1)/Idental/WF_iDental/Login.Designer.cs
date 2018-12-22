@@ -34,6 +34,7 @@
             this.picSmallAvatar = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.palLogin = new System.Windows.Forms.Panel();
+            this.btnConnectDB = new System.Windows.Forms.Button();
             this.labLogin = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnLogin = new System.Windows.Forms.Button();
@@ -98,6 +99,7 @@
             // 
             // palLogin
             // 
+            this.palLogin.Controls.Add(this.btnConnectDB);
             this.palLogin.Controls.Add(this.labLogin);
             this.palLogin.Controls.Add(this.pictureBox1);
             this.palLogin.Controls.Add(this.btnLogin);
@@ -110,6 +112,17 @@
             this.palLogin.Name = "palLogin";
             this.palLogin.Size = new System.Drawing.Size(1250, 653);
             this.palLogin.TabIndex = 2;
+            // 
+            // btnConnectDB
+            // 
+            this.btnConnectDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConnectDB.Image = ((System.Drawing.Image)(resources.GetObject("btnConnectDB.Image")));
+            this.btnConnectDB.Location = new System.Drawing.Point(1207, 614);
+            this.btnConnectDB.Name = "btnConnectDB";
+            this.btnConnectDB.Size = new System.Drawing.Size(40, 36);
+            this.btnConnectDB.TabIndex = 15;
+            this.btnConnectDB.UseVisualStyleBackColor = true;
+            this.btnConnectDB.Click += new System.EventHandler(this.btnConnectDB_Click);
             // 
             // labLogin
             // 
@@ -225,6 +238,7 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label labpass;
+        private System.Windows.Forms.Button btnConnectDB;
     }
 }
 

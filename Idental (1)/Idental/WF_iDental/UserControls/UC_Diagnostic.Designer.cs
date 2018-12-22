@@ -34,7 +34,6 @@
             this.panelBottom = new System.Windows.Forms.Panel();
             this.palTop = new System.Windows.Forms.Panel();
             this.btnTimKiem = new System.Windows.Forms.Button();
-            this.labNameDoctor = new System.Windows.Forms.Label();
             this.txtPatientID = new System.Windows.Forms.TextBox();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.palContain = new System.Windows.Forms.Panel();
@@ -63,7 +62,6 @@
             // palTop
             // 
             this.palTop.Controls.Add(this.btnTimKiem);
-            this.palTop.Controls.Add(this.labNameDoctor);
             this.palTop.Controls.Add(this.txtPatientID);
             this.palTop.Controls.Add(this.txtSearch);
             this.palTop.Dock = System.Windows.Forms.DockStyle.Top;
@@ -84,18 +82,6 @@
             this.btnTimKiem.Text = "Tìm Kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
-            // 
-            // labNameDoctor
-            // 
-            this.labNameDoctor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labNameDoctor.AutoSize = true;
-            this.labNameDoctor.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labNameDoctor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.labNameDoctor.Location = new System.Drawing.Point(732, 22);
-            this.labNameDoctor.Name = "labNameDoctor";
-            this.labNameDoctor.Size = new System.Drawing.Size(189, 22);
-            this.labNameDoctor.TabIndex = 3;
-            this.labNameDoctor.Text = "Something in here ! ";
             // 
             // txtPatientID
             // 
@@ -245,7 +231,6 @@
         private System.Windows.Forms.Panel palContain;
         private System.Windows.Forms.DataGridView dgvPatientforDoctor;
         private System.Windows.Forms.Button btnTimKiem;
-        private System.Windows.Forms.Label labNameDoctor;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.DataGridViewTextBoxColumn PatientID;
         private System.Windows.Forms.DataGridViewTextBoxColumn PatientName;

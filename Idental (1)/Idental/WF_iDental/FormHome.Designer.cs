@@ -31,8 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formHome));
             this.palTop2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labPosition = new System.Windows.Forms.Label();
+            this.labEmployeeName = new System.Windows.Forms.Label();
             this.labTime = new System.Windows.Forms.Label();
             this.palTop = new System.Windows.Forms.Panel();
             this.picMin = new System.Windows.Forms.PictureBox();
@@ -55,6 +55,7 @@
             this.palContain = new System.Windows.Forms.Panel();
             this.palUC = new System.Windows.Forms.Panel();
             this.timerTime = new System.Windows.Forms.Timer(this.components);
+            this.labEmployeeID = new System.Windows.Forms.Label();
             this.palTop2.SuspendLayout();
             this.palTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMin)).BeginInit();
@@ -69,8 +70,9 @@
             // palTop2
             // 
             this.palTop2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.palTop2.Controls.Add(this.label3);
-            this.palTop2.Controls.Add(this.label2);
+            this.palTop2.Controls.Add(this.labEmployeeID);
+            this.palTop2.Controls.Add(this.labPosition);
+            this.palTop2.Controls.Add(this.labEmployeeName);
             this.palTop2.Controls.Add(this.labTime);
             this.palTop2.Dock = System.Windows.Forms.DockStyle.Top;
             this.palTop2.Location = new System.Drawing.Point(250, 52);
@@ -78,27 +80,27 @@
             this.palTop2.Size = new System.Drawing.Size(1000, 99);
             this.palTop2.TabIndex = 6;
             // 
-            // label3
+            // labPosition
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(17, 53);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 22);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Quyền : Admin";
+            this.labPosition.AutoSize = true;
+            this.labPosition.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labPosition.ForeColor = System.Drawing.Color.White;
+            this.labPosition.Location = new System.Drawing.Point(17, 53);
+            this.labPosition.Name = "labPosition";
+            this.labPosition.Size = new System.Drawing.Size(140, 22);
+            this.labPosition.TabIndex = 6;
+            this.labPosition.Text = "Quyền : Admin";
             // 
-            // label2
+            // labEmployeeName
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(17, 21);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(260, 22);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Xin Chào : Dương Hải Quân";
+            this.labEmployeeName.AutoSize = true;
+            this.labEmployeeName.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labEmployeeName.ForeColor = System.Drawing.Color.White;
+            this.labEmployeeName.Location = new System.Drawing.Point(17, 21);
+            this.labEmployeeName.Name = "labEmployeeName";
+            this.labEmployeeName.Size = new System.Drawing.Size(260, 22);
+            this.labEmployeeName.TabIndex = 5;
+            this.labEmployeeName.Text = "Xin Chào : Dương Hải Quân";
             // 
             // labTime
             // 
@@ -403,6 +405,17 @@
             // 
             this.timerTime.Tick += new System.EventHandler(this.timerTime_Tick);
             // 
+            // labEmployeeID
+            // 
+            this.labEmployeeID.AutoSize = true;
+            this.labEmployeeID.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold);
+            this.labEmployeeID.ForeColor = System.Drawing.Color.White;
+            this.labEmployeeID.Location = new System.Drawing.Point(163, 53);
+            this.labEmployeeID.Name = "labEmployeeID";
+            this.labEmployeeID.Size = new System.Drawing.Size(40, 22);
+            this.labEmployeeID.TabIndex = 7;
+            this.labEmployeeID.Text = "- 4";
+            // 
             // formHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -435,8 +448,8 @@
         #endregion
 
         private System.Windows.Forms.Panel palTop2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labPosition;
+        private System.Windows.Forms.Label labEmployeeName;
         private System.Windows.Forms.Label labTime;
         private System.Windows.Forms.Panel palTop;
         private System.Windows.Forms.Button btnautosize;
@@ -459,5 +472,6 @@
         private System.Windows.Forms.Button btnLichHen;
         private System.Windows.Forms.PictureBox picMax;
         private System.Windows.Forms.PictureBox picMin;
+        private System.Windows.Forms.Label labEmployeeID;
     }
 }

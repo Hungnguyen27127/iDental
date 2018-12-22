@@ -59,7 +59,7 @@ namespace WF_iDental.UserControls
             dtpDateOfBirth.DataBindings.Clear();
             dtpDateOfBirth.DataBindings.Add("Text", dgvPatients.DataSource, "DateOfBirth");
             txtMedicalRecordID.DataBindings.Clear();
-            txtMedicalRecordID.DataBindings.Add("Text", dgvLichSuKham.DataSource, "BillID");
+            txtMedicalRecordID.DataBindings.Add("Text", dgvLichSuKham.DataSource, "MedicalRecordID");
         }
         //api
         public List<Patient> GetAllPatient()
@@ -182,8 +182,6 @@ namespace WF_iDental.UserControls
 
         public void DeletePatient(int PatientID)
         {
-
-
             using (var client = new HttpClient())
             {
 
@@ -212,19 +210,16 @@ namespace WF_iDental.UserControls
                 //HTTP GET
                 var responseTask = client.GetAsync("Patient?name=" + name);
                 responseTask.Wait();
-
                 var result = responseTask.Result;
                 if (result.IsSuccessStatusCode)
                 {
                     var readTask = result.Content.ReadAsAsync<IList<Patient>>();
                     readTask.Wait();
-
                     lichhen = readTask.Result;
                 }
                 else
                 {
                     lichhen = Enumerable.Empty<Patient>();
-
                 }
             }
             return lichhen.ToList();
@@ -267,7 +262,7 @@ namespace WF_iDental.UserControls
             txtPatientID.DataBindings.Add("Text", dgvPatients.DataSource, "PatientID");
             txtMedicalRecordID.DataBindings.Clear();
             txtMedicalRecordID.DataBindings.Add("Text", dgvLichSuKham.DataSource, "BillID");
-
+           
 
         }
 
@@ -420,6 +415,13 @@ namespace WF_iDental.UserControls
                     //MessageBox.Show(dgvPatients.CurrentCell.Value.ToString());
                 }
         }
+
+
+
+        //private void btnRefresh_Click(object sender, EventArgs e)
+        //{
+        //    dgvLichSuKham.DataSource = GetAllRecord();
+        //}
     }
 }
     

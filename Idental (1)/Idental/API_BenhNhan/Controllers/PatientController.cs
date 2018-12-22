@@ -23,7 +23,7 @@ namespace API_BenhNhan.Controllers
             return Ok(list);
         }
 
-        public IHttpActionResult GetShortenPatient( int patientID)
+        public IHttpActionResult GetShortenPatient(int patientID)
         {
             ShortenPatient bn = dao.GetShortenPatient(patientID);
             if (bn == null)
@@ -79,5 +79,17 @@ namespace API_BenhNhan.Controllers
 
             return Ok(list);
         }
+        //public  IHttpActionResult Delete_byName(string ServiceName)
+        //{
+        //    if (!ModelState.IsValid)
+        //        return BadRequest("Not a valid model");
+
+        //    if (!dao.Search_DichVu2(ServiceName))
+        //    {
+        //        return BadRequest("Not a valid model");
+        //    }
+
+        //    return Ok();
+        //}
     }
 }

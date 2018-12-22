@@ -36,7 +36,7 @@
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(183, 137);
+            this.button1.Location = new System.Drawing.Point(184, 148);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(95, 29);
             this.button1.TabIndex = 0;
@@ -46,7 +46,7 @@
             // button2
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(317, 137);
+            this.button2.Location = new System.Drawing.Point(316, 148);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(95, 29);
             this.button2.TabIndex = 1;

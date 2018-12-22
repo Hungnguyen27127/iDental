@@ -20,18 +20,17 @@ namespace WF_iDental
             InitializeComponent();
         }
         int value;
+        public AddAppointment(int AppointmentID) : this()
+        {
+            value = AppointmentID;
+            //txtAppointmentID.Text = value.ToString();
+        }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
-        public AddAppointment(int AppointmentID): this()
-        {
-            value = AppointmentID ;
-            //txtAppointmentID.Text = value.ToString();
-        } 
+        
         public string baseAddress = "http://localhost:55965/api/";
-        // apipostnew
-       
         public void ThemLichHen(int DoctorID, DateTime date , string Name , string phone)
         {
          
@@ -88,7 +87,6 @@ namespace WF_iDental
         {
             this.Close();
         }
-
         private void btnSave_Click(object sender, EventArgs e)
         {
             int DoctorID = Convert.ToInt32(cbbDoctor.SelectedValue);
@@ -100,8 +98,6 @@ namespace WF_iDental
 
          
         }
-     
-
         private void AddAppointment_Load(object sender, EventArgs e)
         {
             cbbDoctor.DataSource = LoadDataDoctorComboBox();

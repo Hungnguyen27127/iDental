@@ -24,10 +24,6 @@ namespace WF_iDental.UserControls
             txtAppointment.DataBindings.Clear();
             txtAppointment.DataBindings.Add("Text", dgvLichHen.DataSource, "AppointmentID");
         }
-
-        // api 
-
-        // Getall
         public List<AppointmentShow> GetAll()
         {
             IEnumerable<AppointmentShow> lichhen = null;
@@ -127,9 +123,7 @@ namespace WF_iDental.UserControls
                 }
             }
             return lichhen.ToList();
-        }
-
-        //call api   
+        }  
         private void UC_Appointment_Load(object sender, EventArgs e)
         {
             cbbDoctor.DataSource = LoadDataDoctorComboBox();

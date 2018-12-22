@@ -28,3 +28,8 @@ C:\Users\lenovo\Desktop\Idental (1)\Idental\Data_iDental\bin\Debug\Data_iDental.
 C:\Users\lenovo\Desktop\Idental (1)\Idental\Data_iDental\obj\Debug\Data_iDental.csprojResolveAssemblyReference.cache
 C:\Users\lenovo\Desktop\Idental (1)\Idental\Data_iDental\obj\Debug\Data_iDental.dll
 C:\Users\lenovo\Desktop\Idental (1)\Idental\Data_iDental\obj\Debug\Data_iDental.pdb
+D:\GitHub\iDental\Idental (1)\Idental\Data_iDental\bin\Debug\Data_iDental.dll
+D:\GitHub\iDental\Idental (1)\Idental\Data_iDental\bin\Debug\Data_iDental.pdb
+D:\GitHub\iDental\Idental (1)\Idental\Data_iDental\obj\Debug\Data_iDental.csprojResolveAssemblyReference.cache
+D:\GitHub\iDental\Idental (1)\Idental\Data_iDental\obj\Debug\Data_iDental.dll
+D:\GitHub\iDental\Idental (1)\Idental\Data_iDental\obj\Debug\Data_iDental.pdb

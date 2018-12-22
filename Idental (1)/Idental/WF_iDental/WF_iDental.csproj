@@ -75,6 +75,12 @@
     <Compile Include="CompleteRecord.Designer.cs">
       <DependentUpon>CompleteRecord.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConnectDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectDB.Designer.cs">
+      <DependentUpon>ConnectDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditAppointent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,12 @@
     <Compile Include="UserControls\UC_Home.Designer.cs">
       <DependentUpon>UC_Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UC_Meterial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Meterial.Designer.cs">
+      <DependentUpon>UC_Meterial.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UC_Patient.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -158,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CompleteRecord.resx">
       <DependentUpon>CompleteRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectDB.resx">
+      <DependentUpon>ConnectDB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditAppointent.resx">
       <DependentUpon>EditAppointent.cs</DependentUpon>
@@ -194,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_Home.resx">
       <DependentUpon>UC_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Meterial.resx">
+      <DependentUpon>UC_Meterial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_Patient.resx">
       <DependentUpon>UC_Patient.cs</DependentUpon>

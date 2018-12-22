@@ -296,7 +296,6 @@ namespace WF_iDental
                 {
                     var readTask = result.Content.ReadAsAsync<IList<BillExtend>>();
                     readTask.Wait();
-
                     bill = readTask.Result;
                 }
                 else
@@ -307,6 +306,31 @@ namespace WF_iDental
             }
             return bill.ToList();
         }
+        public Service GetUnitPrice(int serviceid)
+        {
+            Service dichvu = null;
+
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(baseAddress1);
+                //HTTP GET
+                var responseTask = client.GetAsync("Service?serviceID="+serviceid);
+                responseTask.Wait();
+
+                var result = responseTask.Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    var readTask = result.Content.ReadAsAsync<Service>();
+                    readTask.Wait();
+                    dichvu = readTask.Result;
+                }
+                else
+                { 
+                }
+            }
+            return dichvu;
+        }
+      
         private void CompleteRecord_Load(object sender, EventArgs e)
         {
             int patientID = Convert.ToInt32(txtPatientID.Text);
@@ -315,24 +339,23 @@ namespace WF_iDental
             labGender.DataBindings.Add("Text", InforPatient(patientID), "Gender", true);
             cbbSeviceName.DataSource = GetAll();
             cbbSeviceName.DisplayMember = "ServiceName";
-            cbbSeviceName.ValueMember = "ServiceID";
+            cbbSeviceName.ValueMember = "ServiceID";          
             txtDoctorID.Text = "5"; //  Sau khi Phân quyền sẽ lấy được DoctorID 
             txtservice.Text = "";
-            txtservice.Hide();
-            labChonDichVu.Visible = false;
-            txtdiagnostic.Text = "";
-            btnAddService.Visible = false;       
+            btnThem.Visible = false;
+            btnKetThuc.Visible = false;  
             dgvListBillExtend.Visible = false;
-          
-
+            btnDeleteService.Visible = false;
+            btnAddService.Visible = false;
+            //txtUnitPrice.Text = "";
         }
    
         private void btnAddService_Click(object sender, EventArgs e)
         {         
-            if (palServiceMedicine.Height == 10 && palExtendBill.Width == 10)
+            if (palExtendBill.Width == 5)
             {
-                palExtendBill.Width = 783;
-                palServiceMedicine.Height = 225;
+                     
+                palExtendBill.Width = palRight.Width;            
                 dgvListBillExtend.Visible = true;
                 dgvListBillExtend.DataSource = GetBillExtend(Convert.ToInt32(txtPatientID.Text));
                 txtBillID.DataBindings.Clear();
@@ -342,6 +365,8 @@ namespace WF_iDental
                 cbbCatelogy.DataSource = GetCategory();
                 cbbCatelogy.DisplayMember = "Category";
                 btnNext.Visible = false;
+                btnKetThuc.Visible = true;
+                btnThem.Visible = true;
               
             }
             else
@@ -359,33 +384,29 @@ namespace WF_iDental
             string diagnostic = Convert.ToString(txtdiagnostic.Text);
             int employeeID = Convert.ToInt32(txtDoctorID.Text);
             DateTime dateofcreate = Convert.ToDateTime(dtkDateOfCreate.Value);
-
             if (txtdiagnostic.Text != "")
             {
                 PostRecord(patientID, dateofcreate, diagnostic, employeeID);
-
                 labChonDichVu.Visible = true;
                 txtservice.Visible = true;
                 btnAddService.Visible = true;
                 btnNext.Visible = false;
+                btnKetThuc.Visible=true;
+                btnThem.Visible = true;
+                btnAddService.Visible = true;
             }
             else
             {
                 MessageBox.Show(" Quang bảo không thêm được vì chưa điền chuẩn đoán ! ");
             }
         }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
         private void btnKetThuc_Click(object sender, EventArgs e)
         {
+       
             palServiceMedicine.Height = 10;
-            palExtendBill.Width = 10;
+            palExtendBill.Width = 5;
             dgvListBillExtend.Hide();
+            this.Close();
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -399,18 +420,17 @@ namespace WF_iDental
             int billid = Convert.ToInt32(txtBillID.Text);
             ThemChiTietDichVu(serviceid, billid);
             ThemDonThuoc(medicineID , recordID , among , usage);
-            if (txtservice.Text == "")
+            txtservice.Text = cbbSeviceName.Text.ToString();
+            if (this.txtservice.Text != "")
             {
-                txtservice.Text = cbbSeviceName.Text.ToString();
+                libListService.Items.Add(this.txtservice.Text);
             }
-            else
-            {
-                txtservice.Text += "," + cbbSeviceName.Text.ToString();
-            }
-            palServiceMedicine.Height = 10;
-            palExtendBill.Width = 10;
+            palExtendBill.Width = 5;
             dgvListBillExtend.Hide();
             btnCancel.Text = "Xong";
+            btnKetThuc.Text = "Xong";
+            btnThem.Visible = false;
+            btnCancel.Visible = false;
            
         }
 
@@ -422,40 +442,41 @@ namespace WF_iDental
           
         }
 
-        private void cbbCatelogy_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void palRight_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void palLeft_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-        private void palAddSevice_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+      
         private void panel2_MouseDown(object sender, MouseEventArgs e)
         {
-
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void btnDeleteService_Click(object sender, EventArgs e)
+        {
+
+        }
+        //public void DeleteListBoxServiceItem( string name)
+        //{
+        //    using (var client = new HttpClient())
+        //    {
+
+        //        client.BaseAddress = new Uri(baseAddress);
+        //        var responseTask = client.DeleteAsync($"Patient?=" + name);
+        //        responseTask.Wait();
+
+        //        var result = responseTask.Result;
+        //        if (result.IsSuccessStatusCode)
+        //        {
+        //            MessageBox.Show("Quang bảo đã xóa được! ");
+        //        }
+        //        else
+        //        {
+        //            MessageBox.Show("Quang bảo chưa xóa được! ");
+        //        }
+        //    }
+        //}
     }
+
 }

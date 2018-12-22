@@ -24,9 +24,6 @@ namespace WF_iDental.UserControls
             txtService.DataBindings.Clear();
             txtService.DataBindings.Add("Text", dgvDichVu.DataSource, "ServiceID");
         }
-        // api 
-
-        // Getall
         public List<Service> GetAll()
         {
             IEnumerable<Service> dichvu = null;
@@ -43,13 +40,11 @@ namespace WF_iDental.UserControls
                 {
                     var readTask = result.Content.ReadAsAsync<IList<Service>>();
                     readTask.Wait();
-
                     dichvu = readTask.Result;
                 }
                 else
                 {
                     dichvu = Enumerable.Empty<Service>();
-
                 }
             }
             return dichvu.ToList();
@@ -64,8 +59,6 @@ namespace WF_iDental.UserControls
       
         public void DeleteService(int ServiceID)
         {
-
-
             using (var client = new HttpClient())
             {
 

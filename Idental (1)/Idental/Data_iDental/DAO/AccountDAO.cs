@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Data_iDental.Entities;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -36,6 +38,46 @@ namespace Data_iDental.DAO
             string res = (string)DataProvider.ExecuteScalar(proc, para);
 
             return res;
+        }
+        public Account GETlogin(string username)
+        {
+            const string proc = "DangNhap";
+            List<SqlParameter> para = new List<SqlParameter>()
+            {
+                new SqlParameter("ACCOUNTNAME", username)
+
+            };
+            IDataReader reader = DataProvider.ExecuteReader(proc, para);
+            Account res = new Account();
+            while (reader.Read())
+            {
+                res.Password = Convert.ToString(reader["Password"]);
+                res.AccountID = Convert.ToInt32(reader["AccountID"]);
+                res.AccountName = Convert.ToString(reader["AccountName"]);
+                res.Role = Convert.ToString(reader["Role"]);
+            }
+            return res;
+
+        }
+
+        public EmployeeShorten GETlinfor(int accountID)
+        {
+            const string proc = "HienThiNguoiDangNhap";
+            List<SqlParameter> para = new List<SqlParameter>()
+            {
+                new SqlParameter("ACCOUNTID", accountID)
+
+            };
+            IDataReader reader = DataProvider.ExecuteReader(proc, para);
+            EmployeeShorten res = new EmployeeShorten();
+            while (reader.Read())
+            {
+                res.EmployeeID = Convert.ToInt32(reader["EmployeeID"]);
+                res.EmployeeName = Convert.ToString(reader["EmployeeName"]);              
+                res.Position = Convert.ToString(reader["Position"]);              
+            }
+            return res;
+
         }
     }
 }
