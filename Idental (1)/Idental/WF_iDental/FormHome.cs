@@ -88,7 +88,11 @@ namespace WF_iDental
         }
         private void btnMeterials_Click(object sender, EventArgs e)
         {
+            int x = Convert.ToInt32(labEmployeeID.Text);
+            string y = labEmployeeName.Text;
             moveSidePanel(btnMeterials);
+            UC_Meterial f = new UC_Meterial(x ,y);
+            addUserControl(f);
         }
         private void btnReport_Click(object sender, EventArgs e)
         {
@@ -114,7 +118,7 @@ namespace WF_iDental
         }
         private void formHome_Load(object sender, EventArgs e)
         {
-            labEmployeeName.Text = "Xin Chào : " + ShowInforUser(accountid).EmployeeName;
+            labEmployeeName.Text = ShowInforUser(accountid).EmployeeName;
             labPosition.Text = "Quyền : " + ShowInforUser(accountid).Position + " - ";
             labEmployeeID.Text = ShowInforUser(accountid).EmployeeID.ToString();
             int x = Convert.ToInt32(labEmployeeID.Text);

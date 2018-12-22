@@ -44,6 +44,9 @@
     <Compile Include="DAO\AppointmentDAO.cs" />
     <Compile Include="DAO\BillDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\MaterialDAO.cs" />
+    <Compile Include="DAO\MaterialIssueDAO.cs" />
+    <Compile Include="DAO\MaterialReceiptDAO.cs" />
     <Compile Include="DAO\PatientDAO.cs" />
     <Compile Include="DAO\RecordDAO.cs" />
     <Compile Include="DAO\ServiceDAO.cs" />
@@ -56,11 +59,16 @@
     <Compile Include="Entities\BillExtend.cs" />
     <Compile Include="Entities\Doctor.cs" />
     <Compile Include="Entities\EmployeeShorten.cs" />
+    <Compile Include="Entities\Material.cs" />
+    <Compile Include="Entities\MaterialIssues.cs" />
+    <Compile Include="Entities\MaterialReceipts.cs" />
+    <Compile Include="Entities\MaterialShow.cs" />
     <Compile Include="Entities\Medicine.cs" />
     <Compile Include="Entities\MedicineDetail.cs" />
     <Compile Include="Entities\Meterial.cs" />
     <Compile Include="Entities\NumberOfPatient.cs" />
     <Compile Include="Entities\Patient.cs" />
+    <Compile Include="Entities\Provider.cs" />
     <Compile Include="Entities\Record.cs" />
     <Compile Include="Entities\RecordShow.cs" />
     <Compile Include="Entities\Service.cs" />

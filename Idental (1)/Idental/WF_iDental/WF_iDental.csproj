@@ -63,6 +63,12 @@
     <Compile Include="AddAppointment.Designer.cs">
       <DependentUpon>AddAppointment.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMaterial.Designer.cs">
+      <DependentUpon>AddMaterial.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddService.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,12 @@
     <Compile Include="EditAppointent.Designer.cs">
       <DependentUpon>EditAppointent.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditMaterial.Designer.cs">
+      <DependentUpon>EditMaterial.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditService.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,11 +111,23 @@
     <Compile Include="FormHome.Designer.cs">
       <DependentUpon>FormHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="IssueMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IssueMaterial.Designer.cs">
+      <DependentUpon>IssueMaterial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialReceipt.Designer.cs">
+      <DependentUpon>MaterialReceipt.cs</DependentUpon>
     </Compile>
     <Compile Include="NoticeForm.cs">
       <SubType>Form</SubType>
@@ -165,6 +189,9 @@
     <EmbeddedResource Include="AddAppointment.resx">
       <DependentUpon>AddAppointment.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddMaterial.resx">
+      <DependentUpon>AddMaterial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddService.resx">
       <DependentUpon>AddService.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,14 +204,23 @@
     <EmbeddedResource Include="EditAppointent.resx">
       <DependentUpon>EditAppointent.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditMaterial.resx">
+      <DependentUpon>EditMaterial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditService.resx">
       <DependentUpon>EditService.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormHome.resx">
       <DependentUpon>FormHome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IssueMaterial.resx">
+      <DependentUpon>IssueMaterial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialReceipt.resx">
+      <DependentUpon>MaterialReceipt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NoticeForm.resx">
       <DependentUpon>NoticeForm.cs</DependentUpon>

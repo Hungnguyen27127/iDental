@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formHome));
             this.palTop2 = new System.Windows.Forms.Panel();
+            this.labEmployeeID = new System.Windows.Forms.Label();
             this.labPosition = new System.Windows.Forms.Label();
             this.labEmployeeName = new System.Windows.Forms.Label();
             this.labTime = new System.Windows.Forms.Label();
@@ -55,7 +56,7 @@
             this.palContain = new System.Windows.Forms.Panel();
             this.palUC = new System.Windows.Forms.Panel();
             this.timerTime = new System.Windows.Forms.Timer(this.components);
-            this.labEmployeeID = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.palTop2.SuspendLayout();
             this.palTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMin)).BeginInit();
@@ -72,6 +73,7 @@
             this.palTop2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.palTop2.Controls.Add(this.labEmployeeID);
             this.palTop2.Controls.Add(this.labPosition);
+            this.palTop2.Controls.Add(this.label1);
             this.palTop2.Controls.Add(this.labEmployeeName);
             this.palTop2.Controls.Add(this.labTime);
             this.palTop2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -79,6 +81,17 @@
             this.palTop2.Name = "palTop2";
             this.palTop2.Size = new System.Drawing.Size(1000, 99);
             this.palTop2.TabIndex = 6;
+            // 
+            // labEmployeeID
+            // 
+            this.labEmployeeID.AutoSize = true;
+            this.labEmployeeID.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold);
+            this.labEmployeeID.ForeColor = System.Drawing.Color.White;
+            this.labEmployeeID.Location = new System.Drawing.Point(163, 53);
+            this.labEmployeeID.Name = "labEmployeeID";
+            this.labEmployeeID.Size = new System.Drawing.Size(40, 22);
+            this.labEmployeeID.TabIndex = 7;
+            this.labEmployeeID.Text = "- 4";
             // 
             // labPosition
             // 
@@ -96,11 +109,11 @@
             this.labEmployeeName.AutoSize = true;
             this.labEmployeeName.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labEmployeeName.ForeColor = System.Drawing.Color.White;
-            this.labEmployeeName.Location = new System.Drawing.Point(17, 21);
+            this.labEmployeeName.Location = new System.Drawing.Point(143, 18);
             this.labEmployeeName.Name = "labEmployeeName";
-            this.labEmployeeName.Size = new System.Drawing.Size(260, 22);
+            this.labEmployeeName.Size = new System.Drawing.Size(150, 22);
             this.labEmployeeName.TabIndex = 5;
-            this.labEmployeeName.Text = "Xin Chào : Dương Hải Quân";
+            this.labEmployeeName.Text = "Dương Hải Quân";
             // 
             // labTime
             // 
@@ -405,16 +418,16 @@
             // 
             this.timerTime.Tick += new System.EventHandler(this.timerTime_Tick);
             // 
-            // labEmployeeID
+            // label1
             // 
-            this.labEmployeeID.AutoSize = true;
-            this.labEmployeeID.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold);
-            this.labEmployeeID.ForeColor = System.Drawing.Color.White;
-            this.labEmployeeID.Location = new System.Drawing.Point(163, 53);
-            this.labEmployeeID.Name = "labEmployeeID";
-            this.labEmployeeID.Size = new System.Drawing.Size(40, 22);
-            this.labEmployeeID.TabIndex = 7;
-            this.labEmployeeID.Text = "- 4";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(17, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(120, 22);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Xin Chào : ";
             // 
             // formHome
             // 
@@ -473,5 +486,6 @@
         private System.Windows.Forms.PictureBox picMax;
         private System.Windows.Forms.PictureBox picMin;
         private System.Windows.Forms.Label labEmployeeID;
+        private System.Windows.Forms.Label label1;
     }
 }
